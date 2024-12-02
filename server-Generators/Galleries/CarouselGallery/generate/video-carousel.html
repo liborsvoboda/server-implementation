@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Video Carousel Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/blueimp-gallery.css" />
+    <link rel="stylesheet" href="css/blueimp-gallery-indicator.css" />
+    <link rel="stylesheet" href="css/blueimp-gallery-video.css" />
+</head>
+<body>
+
+    <div id="blueimp-video-carousel"
+         class="blueimp-gallery blueimp-gallery-controls blueimp-gallery-carousel"
+         aria-label="video carousel">
+        <div class="slides" aria-live="polite"></div>
+        <h3 class="title"></h3>
+        <a class="prev"
+           aria-controls="blueimp-video-carousel"
+           aria-label="previous slide"></a>
+        <a class="next"
+           aria-controls="blueimp-video-carousel"
+           aria-label="next slide"></a>
+        <ol class="indicator"></ol>
+    </div>
+
+    <script src="./js/blueimp-helper.min.js"></script>
+    <script src="./js/blueimp-gallery.min.js"></script>
+    <script src="./js/blueimp-gallery-fullscreen.min.js"></script>
+    <script src="./js/blueimp-gallery-indicator.min.js"></script>
+    <script src="./js/blueimp-gallery-video.min.js"></script>
+    <script src="./js/blueimp-gallery-vimeo.min.js"></script>
+    <script src="./js/blueimp-gallery-youtube.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery.blueimp-gallery.min.js"></script>
+    <script>
+
+
+        /*let sources = [
+            {
+                title: 'Fruits',
+                type: 'video/mp4',
+                href: 'videos/reportDB.mp4',
+                preload: 'auto'
+            },
+            {
+                title: 'Fruits',
+                type: 'video/mp4',
+                href: 'videos/reportDB.mp4',
+                preload: 'auto'
+            }
+        ];*/
+		let files = [];
+
+
+        blueimp.Gallery(sources, {
+            container: '#blueimp-video-carousel',
+            carousel: true,
+            enableKeyboardNavigation: true,
+            startSlideshow: true,
+            fullscreen: true,
+            videoPlaysInline: false,
+        });
+
+
+    </script>
+</body>
+</html>

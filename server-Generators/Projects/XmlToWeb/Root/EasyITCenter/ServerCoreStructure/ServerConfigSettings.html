@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0" />
+    <meta name="author" content="Aona Suzutsuki" />
+    <title>ServerConfigSettings Class</title>
+    <link rel="stylesheet" type="text/css" href="../../css/main.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/menu-icon.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/menu-anim.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/table.css" />
+    <link rel="stylesheet" href="../../syntaxhighlighter/css/shCore.css" type="text/css" />
+    <link rel="stylesheet" href="../../syntaxhighlighter/css/shThemeDefault.css" type="text/css" />
+    <script type="text/javascript" src="../../syntaxhighlighter/js/shCore.js"></script>
+    <script type="text/javascript" src="../../syntaxhighlighter/js/shBrushCSharp.js"></script>
+    <script src="../../js/jquery-1.7.1.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <style type="text/css">
+    </style>
+    <script>
+        $(function () {
+            SyntaxHighlighter.defaults.toolbar = false;
+            SyntaxHighlighter.all();
+
+            registMenu();
+        });
+    </script>
+</head>
+<body>
+
+    <div id="body-container">
+
+        <div id="menu-container">
+            <div id="top-menu-bt-cover">
+                <a class="menu-trigger" href="javascript:void(0);">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+        </div>
+
+        <div id="menu">
+            <ul>
+                <li><a href="../../index.html">Index</a></li>
+                <li>EasyITCenter
+                    <ul>
+                        <li>Controllers
+                            <ul>
+                                <li><a href="../../EasyITCenter/Controllers/EasyITCenterStoredProceduresListApi.html">EasyITCenterStoredProceduresListApi</a></li>
+                                <li><a href="../../EasyITCenter/Controllers/ExpertDocApi/ExpertDocApi.html">ExpertDocApi</a></li>
+                                <li><a href="../../EasyITCenter/Controllers/ServerDocApi/ServerDocApi.html">ServerDocApi</a></li>
+                                <li><a href="../../EasyITCenter/Controllers/SystemWebDocApi/SystemWebDocApi.html">SystemWebDocApi</a></li>
+                                <li><a href="../../EasyITCenter/Controllers/WebPagesAdminGroupMenuListApi/WebPagesAdminGroupMenuListApi.html">WebPagesAdminGroupMenuListApi</a></li>
+                                <li><a href="../../EasyITCenter/Controllers/WebPagesMessagesListApi/WebPagesMessagesListApi.html">WebPagesMessagesListApi</a></li>
+                            </ul>
+                        </li>
+                        <li>ServerCoreDBSettings
+                            <ul>
+                                <li><a href="../../EasyITCenter/ServerCoreDBSettings/ServerCoreLoggerWS.html">ServerCoreLoggerWS</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreDBSettings/ServerDbDgmlSchemaApi.html">ServerDbDgmlSchemaApi</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreDBSettings/ServerEmailerApi.html">ServerEmailerApi</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreDBSettings/RSSLoad/RSSLoad.html">RSSLoad</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreDBSettings/SomeRSSProvider.html">SomeRSSProvider</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreDBSettings/ServerRssFeedApi.html">ServerRssFeedApi</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreDBSettings/ServerWebPagesExportsApi.html">ServerWebPagesExportsApi</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreDBSettings/ServerWebPagesExportApi/ServerWebPagesExportApi.html">ServerWebPagesExportApi</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreDBSettings/RobotsController.html">RobotsController</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreDBSettings/SitemapController.html">SitemapController</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreDBSettings/ServerDynamicSqlApi.html">ServerDynamicSqlApi</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreDBSettings/ServerManagementApi.html">ServerManagementApi</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreDBSettings/ServerOpenGraphApi.html">ServerOpenGraphApi</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreDBSettings/SystemBuilderOnlinePreviewApi/SystemBuilderOnlinePreviewApi.html">SystemBuilderOnlinePreviewApi</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreDBSettings/WebPagesSystemDataGetOnlyApi.html">WebPagesSystemDataGetOnlyApi</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreDBSettings/WebPagesSystemToolsApi/WebPagesSystemToolsApi.html">WebPagesSystemToolsApi</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreDBSettings/WebPagesUserApi/WebPagesUserApi.html">WebPagesUserApi</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreDBSettings/WebProviderGetOnlyApi.html">WebProviderGetOnlyApi</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreDBSettings/EasyITCenterContext.html">EasyITCenterContext</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreDBSettings/DatabaseContextExtensions.html">DatabaseContextExtensions</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreDBSettings/WorkFlowContext.html">WorkFlowContext</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreDBSettings/WorkflowContextExtensions.html">WorkflowContextExtensions</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreDBSettings/StdAuthGenericProviderApi`3.html">StdAuthGenericProviderApi`3</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreDBSettings/StdFreeGenericProviderApi`3.html">StdFreeGenericProviderApi`3</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreDBSettings/SystemStdAuthGenericProviderApi`3.html">SystemStdAuthGenericProviderApi`3</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreDBSettings/SystemStdFreeGenericProviderApi`3.html">SystemStdFreeGenericProviderApi`3</a></li>
+                            </ul>
+                        </li>
+                        <li>ControllersExtensions
+                            <ul>
+                                <li><a href="../../EasyITCenter/ControllersExtensions/EasyITCenterAuthenticationApi/EasyITCenterAuthenticationApi.html">EasyITCenterAuthenticationApi</a></li>
+                                <li><a href="../../EasyITCenter/ControllersExtensions/EasyITCenterBackendCheckApi.html">EasyITCenterBackendCheckApi</a></li>
+                                <li><a href="../../EasyITCenter/ControllersExtensions/SoftwareTriggers.html">SoftwareTriggers</a></li>
+                                <li><a href="../../EasyITCenter/ControllersExtensions/ServerCorePostFileRotatorApi.html">ServerCorePostFileRotatorApi</a></li>
+                                <li><a href="../../EasyITCenter/ControllersExtensions/ServerToolsMinifierApi.html">ServerToolsMinifierApi</a></li>
+                                <li><a href="../../EasyITCenter/ControllersExtensions/ServerCoreAutoGeneratorApi.html">ServerCoreAutoGeneratorApi</a></li>
+                                <li><a href="../../EasyITCenter/ControllersExtensions/ServerCoreWebToolsGenApi.html">ServerCoreWebToolsGenApi</a></li>
+                            </ul>
+                        </li>
+                        <li>DBModel
+                            <ul>
+                                <li><a href="../../EasyITCenter/DBModel/DBResult.html">DBResult</a></li>
+                                <li><a href="../../EasyITCenter/DBModel/DBResultMessage.html">DBResultMessage</a></li>
+                                <li><a href="../../EasyITCenter/DBModel/AuthenticateResponse.html">AuthenticateResponse</a></li>
+                                <li><a href="../../EasyITCenter/DBModel/SetReportFilter.html">SetReportFilter</a></li>
+                                <li><a href="../../EasyITCenter/DBModel/IdFilter.html">IdFilter</a></li>
+                                <li><a href="../../EasyITCenter/DBModel/NameFilter.html">NameFilter</a></li>
+                                <li><a href="../../EasyITCenter/DBModel/CustomString.html">CustomString</a></li>
+                                <li><a href="../../EasyITCenter/DBModel/SystemOperationMessage.html">SystemOperationMessage</a></li>
+                                <li><a href="../../EasyITCenter/DBModel/GenericTable.html">GenericTable</a></li>
+                                <li><a href="../../EasyITCenter/DBModel/AutoGenRequest.html">AutoGenRequest</a></li>
+                                <li><a href="../../EasyITCenter/DBModel/AutoGenConnectionString.html">AutoGenConnectionString</a></li>
+                                <li><a href="../../EasyITCenter/DBModel/UploadGeneratorFiles.html">UploadGeneratorFiles</a></li>
+                                <li><a href="../../EasyITCenter/DBModel/UploadFileData.html">UploadFileData</a></li>
+                                <li><a href="../../EasyITCenter/DBModel/CarouselImage.html">CarouselImage</a></li>
+                                <li><a href="../../EasyITCenter/DBModel/CarouselVideo.html">CarouselVideo</a></li>
+                            </ul>
+                        </li>
+                        <li>ServerCoreWebPages
+                            <ul>
+                                <li><a href="../../EasyITCenter/ServerCoreWebPages/DBWebApiResponses.html">DBWebApiResponses</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreWebPages/ServerWebPagesLogin.html">ServerWebPagesLogin</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreWebPages/ServerWebPagesToken.html">ServerWebPagesToken</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreWebPages/EmailVerification.html">EmailVerification</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreWebPages/WebRegistration.html">WebRegistration</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreWebPages/UserConfig.html">UserConfig</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreWebPages/WebMessage.html">WebMessage</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../../EasyITCenter/BackendServer.html">BackendServer</a></li>
+                        <li>ServerCoreStructure
+                            <ul>
+                                <li><a href="../../EasyITCenter/ServerCoreStructure/ServerConfigSettings.html">ServerConfigSettings</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreStructure/MailRequest.html">MailRequest</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreStructure/ServerStatuses.html">ServerStatuses</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreStructure/ProcessClass.html">ProcessClass</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreStructure/ServerLocalDbDials.html">ServerLocalDbDials</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreStructure/ServerRuntimeData.html">ServerRuntimeData</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreStructure/WebSocketExtension.html">WebSocketExtension</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreStructure/ServerCoreAutoScheduler.html">ServerCoreAutoScheduler</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreStructure/AutoScheduledJob.html">AutoScheduledJob</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreStructure/DelegateHealthCheckPublisher.html">DelegateHealthCheckPublisher</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreStructure/CommunicationController.html">CommunicationController</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreStructure/WebSocketLogProvider.html">WebSocketLogProvider</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreStructure/WebSocketLogger.html">WebSocketLogger</a></li>
+                                <li>CoreOperations
+                                    <ul>
+                                        <li><a href="../../EasyITCenter/ServerCoreStructure/CoreOperations/GetOperatingSystemInfo.html">GetOperatingSystemInfo</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="../../EasyITCenter/ServerCoreStructure/DataOperations/DataOperations.html">DataOperations</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreStructure/DbOperations.html">DbOperations</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreStructure/FileOperations/FileOperations.html">FileOperations</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreStructure/WebToolsOperations.html">WebToolsOperations</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreStructure/ServerCoreWebHelpers.html">ServerCoreWebHelpers</a></li>
+                            </ul>
+                        </li>
+                        <li>ServerCoreServers
+                            <ul>
+                                <li><a href="../../EasyITCenter/ServerCoreServers/HostedFtpServer/HostedFtpServer.html">HostedFtpServer</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreServers/HostedFtpServerMembershipProvider.html">HostedFtpServerMembershipProvider</a>
+                                    <ul>
+                                        <li><a href="../../EasyITCenter/ServerCoreServers/HostedFtpServerMembershipProvider/CustomFtpUser.html">CustomFtpUser</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>ServerCoreConfiguration
+                            <ul>
+                                <li><a href="../../EasyITCenter/ServerCoreConfiguration/ServerConfigurationServices.html">ServerConfigurationServices</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreConfiguration/ServerEnablingServices.html">ServerEnablingServices</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreConfiguration/ServerModules.html">ServerModules</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreConfiguration/ServerModulesEnabling.html">ServerModulesEnabling</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../../EasyITCenter/Startup.html">Startup</a></li>
+                        <li><a href="../../EasyITCenter/MimeTypes.html">MimeTypes</a></li>
+                    </ul>
+                </li>
+                <li>UploadFilesServer
+                    <ul>
+                        <li>Controllers
+                            <ul>
+                                <li><a href="../../UploadFilesServer/Controllers/ServerWebsiteStaticFilesApi/ServerWebsiteStaticFilesApi.html">ServerWebsiteStaticFilesApi</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>ServerCorePages
+                    <ul>
+                        <li><a href="../../ServerCorePages/ErrorModel/ErrorModel.html">ErrorModel</a></li>
+                        <li><a href="../../ServerCorePages/IndexModel.html">IndexModel</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+
+        <div id="body-content">
+            <div>
+                <h1>ServerConfigSettings Class</h1>
+                <div>Namespace: EasyITCenter.ServerCoreStructure</div>
+                <div id="inherited">Inherited: <span class="specific-element">System.Object</span></div>
+            </div>
+            <br />
+            The server settings.
+            <br />
+            <div>
+                <h3>Properties</h3>
+                <ol>
+                    <li><a href="#2E260C3DCED9BEAE0033155B589789216CA4831E3211F8A158196B2504F6B54B">EmailerServiceEmailAddress</a></li>
+                    <li><a href="#35DF215D3E846983BB0BF19B5521D5B7FEEFF320F5F2061359E1758E04EF3E9A">EmailerSMTPServerAddress</a></li>
+                    <li><a href="#58E1E342E56DED7987B80A5A37BAAB49EA726D214270DB7BE7306EF99EB97615">EmailerSMTPPort</a></li>
+                    <li><a href="#3D64B721B2878F36650B6C054759820954359771494586917F91AED06F732398">EmailerSMTPSslIsEnabled</a></li>
+                    <li><a href="#05A58525DC7BB27C30878AE81E84A498F1B08B142E3015B606B6523826E71357">EmailerSMTPLoginUsername</a></li>
+                    <li><a href="#5874A6F4F01AB60E99726F77FC548013810DBEACA4C26773B655D3E796B5E447">EmailerSMTPLoginPassword</a></li>
+                    <li><a href="#AE44C1DDEBAEDAF816D4C16D44B235E68DEEC2B3C92DD97683007E6550168872">DatabaseConnectionString</a></li>
+                    <li><a href="#7942892D0F55B4907B96BF3B82E0CF56A4D879EF23CC47A5FC9B3819EE228CFC">DatabaseInternalCachingEnabled</a></li>
+                    <li><a href="#0854245AC7EC59D4C8FCEB3B0B208D87F2E19B91E69F4EB38C295F2F54B609F0">DatabaseInternalCacheTimeoutMin</a></li>
+                    <li><a href="#6936CD4BACEFACF2905EB1A594E0ED8E0A8E19F80C4C79E278A4B54F420BFB02">ConfigLogWarnPlusToDbEnabled</a></li>
+                    <li><a href="#01A9F03900AD9CF6A6DBF89316BF8EF0632021CEA72C1B84C9A0471C5D62573A">ConfigCoreServerRegisteredName</a></li>
+                    <li><a href="#388101C5BE076C9079EA150D4A76356F8CCCA9B1A28FC9D87A667BDB62657E66">ServiceCoreCheckerEmailSenderActive</a></li>
+                    <li><a href="#A815A05A9430E8049CED38B8CDDAC1F2FB213918B6DC174D615511C4BBEBA392">ServiceUseDbLocalAutoupdatedDials</a></li>
+                    <li><a href="#23A174C3C7F8E2C2D282C888F7744060138C88B5D0807395921116697B262295">ServiceServerLanguage</a></li>
+                    <li><a href="#ECFA97A749893419E9153976603F168FBE8E2D3A76CB28D07B4A6CB1610344FF">ServiceEnableMassEmail</a></li>
+                    <li><a href="#F02FD1A9E4A130A282DD4055555511AB17BC1882A364E792FD0A0D2DFC1058B9">ServerProviderModeEnabled</a></li>
+                    <li><a href="#3D5526AF58A2475300A57A007ACC593BF5D80571787E1FD600C5718BACDA9969">ModuleAutoSchedulerEnabled</a></li>
+                    <li><a href="#1DB830071B23234DF6DF231241F94F399039484B3D6A6810B6D256B220DEAD2D">ConfigServerStartupPort</a></li>
+                    <li><a href="#E02253956AB3FB1CFC57D05C2212546BA635E0B08A04FB08E214177A8CA91637">WebSocketTimeoutMin</a></li>
+                    <li><a href="#3E9E77195960217CB7BCA5B1B9BC23C05C2D208595F78C42175222C06F69C96A">WebSocketMaxBufferSizeKb</a></li>
+                    <li><a href="#A14D531CB5ABEAACD2253EFD4FA79994E8EB1BCAC73078A4AE4ECCC81FA57554">ConfigApiTokenTimeoutMin</a></li>
+                    <li><a href="#3B04ADB09AAF9D3066EEBED02DD896E41443B0F7C42B4B08C2D9907FAF6DE7B7">ConfigServerStartupOnHttps</a></li>
+                    <li><a href="#5051CA3A9450C0F0B1EA9D244269B45295469CD6D201DC7F555122AAD6CBF645">ConfigServerGetLetsEncrypt</a></li>
+                    <li><a href="#B6509FC056F6AA6696645472EEA20A16B7743F8F4EDBC2C29034950974895202">ConfigCertificatePath</a></li>
+                    <li><a href="#B929EC287E7620790EBDDE2C77E9B195289B8C45D3A022FE99E68AC05DB99877">ConfigCertificateDomain</a></li>
+                    <li><a href="#FF0912266A532F43F4B17DA845E41DF11470092C7E2A58438D31072DE7E31D48">ConfigCertificatePassword</a></li>
+                    <li><a href="#E9EF7EB8E633AF7CFC25B3B447B3048545CEF456F3A1ED910B445A5E5FDA742C">ConfigJwtLocalKey</a></li>
+                    <li><a href="#EC3AA89637E1F1EC8D0AD12A033B743D530109970470B12DB86522D7E535BE2E">ConfigServerStartupHTTPAndHTTPS</a></li>
+                    <li><a href="#FCF278F11E20F3EBE4A963646EDA3F41DE7B1C46040BB7C16FCE32F03B5D450D">ConfigTimeTokenValidationEnabled</a></li>
+                    <li><a href="#8D915224D6F8460202252187D02E7606349061A65CE5D167A223F41CE7EDB20B">ConfigManagerEmailAddress</a></li>
+                    <li><a href="#623E7E5CD9CFF95A0C041B4BA628B28DF594B6A68D552F14E152F127F979F75C">ServerFtpEngineEnabled</a></li>
+                    <li><a href="#0756072CB663DFCB0DD81F6668D03B86140244005A72624195450B76CADED138">ServerFtpSecurityEnabled</a></li>
+                    <li><a href="#E79BFF8BD8F45DF9B4B3E500D4691561332E48EE6EF212B4F3CC6D7E3C60335A">ServerFtpStorageRootPath</a></li>
+                    <li><a href="#0F3709733748118A8E9C1FB87BCEE7300DBE0F4D8D9AFE83AA4FFFACE80914D4">ServerCorsAllowAnyOrigin</a></li>
+                    <li><a href="#DE46D500CCBB938480FC0B4D7EF778F5E7C8BDC0CBE1093AA6435DBBAA6B71A6">ServerCorsAllowAnyMethod</a></li>
+                    <li><a href="#BDB6C5FAB83C2A9974A15CA43729DA17CADFAD83DF65CA11B7F4300FC498F566">ServerCorsAllowAnyHeader</a></li>
+                    <li><a href="#206CA7EEAD2AE1D42BFE885D916DB542BD1706A452442BADA3AFE34EA5383738">ServerCorsAllowCredentials</a></li>
+                    <li><a href="#FB32027AEE06A05056469626C1865D8094D3C40D4BA7709932FCEE6E46AF3257">ServerPublicUrl</a></li>
+                    <li><a href="#FA895FBCF3001FC13F9B247EDD053BE77CA12430208EE5D99B38395A309411D2">ServerCorsEnabled</a></li>
+                    <li><a href="#B66270B988BA2DA279DE7B422E29CD7C085E408E8A546D8D30F7B53D4330BC3A">ModuleSwaggerApiDocEnabled</a></li>
+                    <li><a href="#FB508FAD70DE2BBBC600133ED43A92340018C7318080D9920683D7125C0617E7">ModuleHealthServiceEnabled</a></li>
+                    <li><a href="#1FDB66A2FB1F41B9554D408F98B22A86801BE4F522DF7D6ACFEB81B8001D3354">ModuleHealthServiceRefreshIntervalSec</a></li>
+                    <li><a href="#DBB14232C2E6DD0600678372055DB4549BB0A6FB64249367D4C07F8A1D9B8D6C">ModuleMdDocumentationEnabled</a></li>
+                    <li><a href="#E313E3A479F0FC1D0ED83B231764E372FC4B5F376352CDC65A907C6F32540312">ModuleDbDiagramGeneratorEnabled</a></li>
+                    <li><a href="#FDD1DFE01DBB98EC136B731C4549090FCBCB55488E82E4B9BE4BBCC6C0737CEF">ModuleHealthServicePath</a></li>
+                    <li><a href="#88676F3049C461DA82D24140381B611CF56D23F06EC81D767388172C81E045D8">ModuleSwaggerApiDocPath</a></li>
+                    <li><a href="#D9D7E91D869AFEF52CEBB40249B7AB78335372FF4FEF58CB82C4635778BE4AE8">ModuleHealthServiceMessageOnChangeOnly</a></li>
+                    <li><a href="#ADCAA0F0D88A8050C25A12A145C75BA7053AAB4347E939E24EDFD2AC98CBD572">ModuleDBEntitySchemaPath</a></li>
+                    <li><a href="#BBB2AB8448C2720554C7CE9953300358C8AFC1A0432A1817EE90B69096932629">ModuleDBEntitySchemaEnabled</a></li>
+                    <li><a href="#8683A0A8F0C3BB22E2044136F2828C868F64B4E38D2EAF33F04514ACA5FEBAAC">ModuleCSharpCodeBuilder</a></li>
+                    <li><a href="#1608D156F479CA8F20175656445591607B11C70E435DC6264055F90729E7EA61">WebRazorPagesEngineEnabled</a></li>
+                    <li><a href="#E8EF2054B54DD51AB20FBA776D5A7B7EAFDA63AC9A4ADEA28546756F6EE4C406">WebMvcPagesEngineEnabled</a></li>
+                    <li><a href="#A758D71E46A139E59E5075AAB11ED42F9DBB16D63639208CEACAD4D9C2E084D8">WebSocketEngineEnabled</a></li>
+                    <li><a href="#92512AB6B0BBF83BF15675BF51BCDEF9E3C8032AA23ECC260BDE14C407784CFA">WebBrowserContentEnabled</a></li>
+                    <li><a href="#147BB7ED9930C7538435B1F57EDA32784563B4AD31B6C4E215F97B534E1433BA">WebSocketServerMonitorEnabled</a></li>
+                    <li><a href="#93926809715A490953F6BAC22401D58ECD2B42C86B8E5774AC33B27F00E06C6F">WebRSSFeedsEnabled</a></li>
+                    <li><a href="#3C034B14FDE25DD4CC31433F301E76869D296E568496E5A0A128B1099477673E">WebRobotTxtFileEnabled</a></li>
+                    <li><a href="#8A5E415ADAC113B5C1F4F6F0BCE14C30EB330C0A002A3E12BCD473B96650443A">WebSitemapFileEnabled</a></li>
+                    <li><a href="#54C485F70DF79075FDBA451D8C869F63C1B041B0608AB42897690DF6617569F3">ModuleWebDataManagerEnabled</a></li>
+                    <li><a href="#80083E1D696B975D2AA51957E56AD636C12F8EA25B9F83F3C8D98C264100AADF">WebLiveDataMonitorEnabled</a></li>
+                    <li><a href="#D604999F6B7CD1A3780540A6FEDCC0F41FB7DEDAF7F53A6C64CBE603FAE58CAB">WebSocketGlobalNotifyPath</a></li>
+                    <li><a href="#2DC05AB965FA9852F7522368FC49C86EF771153F19AF2B5EDDA5883800E41BF9">WebRazorPagesCompileOnRuntime</a></li>
+                </ol>
+
+            </div>
+            
+
+            
+
+            
+
+            
+
+            
+            <br />
+            <div id="properties">
+                <h2>Properties</h2>
+                <br />
+                <div class="method-elem">
+                    <h3 id="2E260C3DCED9BEAE0033155B589789216CA4831E3211F8A158196B2504F6B54B">public void EmailerServiceEmailAddress</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Service email, for info about not available service from HeatchCheck Can be used for
+                next Develop, automatic checking problems, missing data and all other Its Necessary for
+                Correct running Server Internal Core Monitoring
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="35DF215D3E846983BB0BF19B5521D5B7FEEFF320F5F2061359E1758E04EF3E9A">public void EmailerSMTPServerAddress</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                SMTP Server Address for Login to External Mail Server Its Necessary for Correct running
+                Server Internal Core Monitoring
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="58E1E342E56DED7987B80A5A37BAAB49EA726D214270DB7BE7306EF99EB97615">public void EmailerSMTPPort</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                SMTP Port for Login to External Mail Server Its Necessary for Correct running Server
+                Internal Core Monitoring
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="3D64B721B2878F36650B6C054759820954359771494586917F91AED06F732398">public void EmailerSMTPSslIsEnabled</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                EmailerSMTPSslIsEnabled SSl Email Protocol for Login to External Mail Server Its
+                Necessary for Correct running Server Internal Core Monitoring
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="05A58525DC7BB27C30878AE81E84A498F1B08B142E3015B606B6523826E71357">public void EmailerSMTPLoginUsername</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                SMTP UserName for Login to External Mail Server Its Necessary for Correct running Server
+                Internal Core Monitoring
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="5874A6F4F01AB60E99726F77FC548013810DBEACA4C26773B655D3E796B5E447">public void EmailerSMTPLoginPassword</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                SMTP Password for Login to External Mail Server Its Necessary for Correct running Server
+                Internal Core Monitoring
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="AE44C1DDEBAEDAF816D4C16D44B235E68DEEC2B3C92DD97683007E6550168872">public void DatabaseConnectionString</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Server Database Connection string for Full Service of Database
+                Migration/Api/Check/Unlimited Develop !!!Warning: Check this connection for
+                Read/Write/Exec is enabled In Config File Must Be Only This Paramneter
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="7942892D0F55B4907B96BF3B82E0CF56A4D879EF23CC47A5FC9B3819EE228CFC">public void DatabaseInternalCachingEnabled</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Enable Disable Entity Framework Internal Cache I recommend turning it off : from Logic,
+                Duplicit Functionality with Database Server in complex process can generate problems
+                Recommended: false
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="0854245AC7EC59D4C8FCEB3B0B208D87F2E19B91E69F4EB38C295F2F54B609F0">public void DatabaseInternalCacheTimeoutMin</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Time in Minutes for Database Valid Cache Data and Refreshing Duplicit Functionality with
+                Database Server
+                Recommended: 30
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="6936CD4BACEFACF2905EB1A594E0ED8E0A8E19F80C4C79E278A4B54F420BFB02">public void ConfigLogWarnPlusToDbEnabled</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Enable Logging Server Warn and Errors To Database
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="01A9F03900AD9CF6A6DBF89316BF8EF0632021CEA72C1B84C9A0471C5D62573A">public void ConfigCoreServerRegisteredName</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Server Service Name automatic figured in All IS/OS/Engines info
+                Recommended: EASY-IT-CENTER
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="388101C5BE076C9079EA150D4A76356F8CCCA9B1A28FC9D87A667BDB62657E66">public void ServiceCoreCheckerEmailSenderActive</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Activation / Deactivation of Email Sender For Server Core Fails Checker All Catch Write
+                to SendEmail, In Debug mode is Written in console in Release mode is Sended email (All
+                incorrect server statuses are monitored) Can be writen to Database - !!! Warning for
+                infinite Cycling (DB shutdown example)
+                Recommended: true
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="A815A05A9430E8049CED38B8CDDAC1F2FB213918B6DC174D615511C4BBEBA392">public void ServiceUseDbLocalAutoupdatedDials</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Special Function: Using Selected Tables with AutoRefresh On change as Local DataSets,
+                For Optimize Traffic. For Example LanguageList - Static table with often reading
+                Recommended: true - functionality must be implemented in Server Code
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="23A174C3C7F8E2C2D282C888F7744060138C88B5D0807395921116697B262295">public void ServiceServerLanguage</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Server Language for Translating Server internal statuses
+                Recommended: cz or en - other languages are not implemented
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="ECFA97A749893419E9153976603F168FBE8E2D3A76CB28D07B4A6CB1610344FF">public void ServiceEnableMassEmail</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Server support mass emailing as Service You can enable Mass Email Api
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="F02FD1A9E4A130A282DD4055555511AB17BC1882A364E792FD0A0D2DFC1058B9">public void ServerProviderModeEnabled</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Enabling Provider APIs More Informations are Published on WepPages Are Published Core
+                Informations With Full Solutions Info/Tools/Codes/Etc Published
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="3D5526AF58A2475300A57A007ACC593BF5D80571787E1FD600C5718BACDA9969">public void ModuleAutoSchedulerEnabled</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Server Scheduler Module for Automatization Tasks
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="1DB830071B23234DF6DF231241F94F399039484B3D6A6810B6D256B220DEAD2D">public void ConfigServerStartupPort</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Set Server Startup Port on Http/HttpS/WebSocket and for All Engines, Modules, API
+                Controler and WebPages
+                Recommended: 5000
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="E02253956AB3FB1CFC57D05C2212546BA635E0B08A04FB08E214177A8CA91637">public void WebSocketTimeoutMin</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                WebSocket Timeout Connection Settings in Minutes. After timeout when not detected any
+                communication socket is closed Set according to your need
+                Recommended: 2
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="3E9E77195960217CB7BCA5B1B9BC23C05C2D208595F78C42175222C06F69C96A">public void WebSocketMaxBufferSizeKb</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Maximum socket message size for control Traffic
+                Recomended: 10
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="A14D531CB5ABEAACD2253EFD4FA79994E8EB1BCAC73078A4AE4ECCC81FA57554">public void ConfigApiTokenTimeoutMin</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Bearer Token Timeout Setting in Minutes. Connection must be Refreshed in Interval After
+                Timeout connection Must Login Again. It is as needed. You Can Change Key for close All
+                connections Immediately. Timeout is good for Webpages
+                Recomended: 15
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="3B04ADB09AAF9D3066EEBED02DD896E41443B0F7C42B4B08C2D9907FAF6DE7B7">public void ConfigServerStartupOnHttps</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Setting for Server URL Services. Logically can run only one Http or Https Server has
+                more Security Setting Politics.
+                Recommended: true
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="5051CA3A9450C0F0B1EA9D244269B45295469CD6D201DC7F555122AAD6CBF645">public void ConfigServerGetLetsEncrypt</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Setting for Automatic Obtain Lets Encrypt more Security Setting Politics.
+                Recommended: true
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="B6509FC056F6AA6696645472EEA20A16B7743F8F4EDBC2C29034950974895202">public void ConfigCertificatePath</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Certificate file NextFrom'DATA'Path\\Filename.pfx For import External Certificate Its
+                Path from Data Startup Folder,example "groupware.pfx" is in Data Path The Password must
+                be inserted in ConfigCertificatePassword Settings Other for ignore this Setting set
+                empty string "" This settings has Higest Priority before LesEncrypt enabled
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="B929EC287E7620790EBDDE2C77E9B195289B8C45D3A022FE99E68AC05DB99877">public void ConfigCertificateDomain</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Its Domain for include to Automatic Generated Certificate For Server running on HTTPS.
+                Domain is for Your validation Certificate Domain. Can be Changed for commercial. Domain
+                is Used for Lets Encrypt also Write with Comma separator
+                Recommended: 127.0.0.1
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="FF0912266A532F43F4B17DA845E41DF11470092C7E2A58438D31072DE7E31D48">public void ConfigCertificatePassword</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Password will be inserted to Server Generated Certificate for HTTPS.
+                Recommended: empty = Maximal Security Randomly generated 20 chars string
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="E9EF7EB8E633AF7CFC25B3B447B3048545CEF456F3A1ED910B445A5E5FDA742C">public void ConfigJwtLocalKey</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Special Functions:Server AutoGenerated encryption Key For Securing Communication On Each
+                Server Restart All Tokens not will be valid and the Login Reconnect is Requested. Its
+                AntiHacker Security Rule
+                Recommended: empty = Maximal Security Randomly generated 40 chars string
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="EC3AA89637E1F1EC8D0AD12A033B743D530109970470B12DB86522D7E535BE2E">public void ConfigServerStartupHTTPAndHTTPS</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Startup Server On HTTP and HTTPS on Defined Port 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="FCF278F11E20F3EBE4A963646EDA3F41DE7B1C46040BB7C16FCE32F03B5D450D">public void ConfigTimeTokenValidationEnabled</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Enable Disable Bearer Token Timeout Validation Token can be valid EveryTime to using:
+                Example for machine connection Or is Control last activity
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="8D915224D6F8460202252187D02E7606349061A65CE5D167A223F41CE7EDB20B">public void ConfigManagerEmailAddress</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Emailová adresa do obchodních kontaktů
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="623E7E5CD9CFF95A0C041B4BA628B28DF594B6A68D552F14E152F127F979F75C">public void ServerFtpEngineEnabled</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Enable FTP File Server oppened for every connection with full rights
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="0756072CB663DFCB0DD81F6668D03B86140244005A72624195450B76CADED138">public void ServerFtpSecurityEnabled</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Enable FTP Security For access to FTP must be logged
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="E79BFF8BD8F45DF9B4B3E500D4691561332E48EE6EF212B4F3CC6D7E3C60335A">public void ServerFtpStorageRootPath</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                FTP Server Storage Path Definition It Will be under wwwroot for Posibility Share Data or
+                For WebAccess/Browser Over WebPortal
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="0F3709733748118A8E9C1FB87BCEE7300DBE0F4D8D9AFE83AA4FFFACE80914D4">public void ServerCorsAllowAnyOrigin</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                CORS Hlavčky HTTP Requestů příchozích na server WEB + API, Povolit jakýkoli původ
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="DE46D500CCBB938480FC0B4D7EF778F5E7C8BDC0CBE1093AA6435DBBAA6B71A6">public void ServerCorsAllowAnyMethod</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                CORS Hlavčky HTTP Requestů příchozích na server WEB + API, Povolit jakoukoliv Metodu
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="BDB6C5FAB83C2A9974A15CA43729DA17CADFAD83DF65CA11B7F4300FC498F566">public void ServerCorsAllowAnyHeader</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                CORS Hlavčky HTTP Requestů příchozích na server WEB + API, Povolit jakýkoliv Header
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="206CA7EEAD2AE1D42BFE885D916DB542BD1706A452442BADA3AFE34EA5383738">public void ServerCorsAllowCredentials</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                CORS Hlavčky HTTP Requestů příchozích na server WEB + API , Povolit jakékoliv Pověření - Autorizaci
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="FB32027AEE06A05056469626C1865D8094D3C40D4BA7709932FCEE6E46AF3257">public void ServerPublicUrl</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Veřejná URL adresa serveru použita v modulech
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="FA895FBCF3001FC13F9B247EDD053BE77CA12430208EE5D99B38395A309411D2">public void ServerCorsEnabled</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Server Filtrování Dle CORS Zapnuto
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="B66270B988BA2DA279DE7B422E29CD7C085E408E8A546D8D30F7B53D4330BC3A">public void ModuleSwaggerApiDocEnabled</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Special Function: Server Automatically Generate Full Documentation of API structure AND
+                Database Model. Plus Included API Interface for Online Testing All API Methods with
+                Authentication Its Automatic Solution for Third Party cooperation. All changes are
+                Reflected after restart server
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="FB508FAD70DE2BBBC600133ED43A92340018C7318080D9920683D7125C0617E7">public void ModuleHealthServiceEnabled</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Special Function: More than 200 Server Statuses Can be monitored by HeathCheckService,
+                Over Net can Control Other Company Services Also as Central Control Point With Email
+                Service. For Example: Server/Memory/All DB Types/IP/HDD/Port/Api/NET/Cloud/Environment
+                Must be run for Metrics AddOn https://learn.microsoft.com/en-us/dotnet/architecture/microservices/implement-resilient-applications/monitor-app-health
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="1FDB66A2FB1F41B9554D408F98B22A86801BE4F522DF7D6ACFEB81B8001D3354">public void ModuleHealthServiceRefreshIntervalSec</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Special Function: More than 200 Server Statuses Can be monitored by HeathCheckService,
+                Over Net can Control Other Company Services Also as Central Control Point With Email
+                Service. For Example: Server/Memory/All DB Types/IP/HDD/Port/Api/NET/Cloud/Environment
+                Must be run for Metrics AddOn !!! run in Release mode for Good Reading of Logs without
+                HeathChecks Cycling info https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks https://testfully.io/blog/api-health-check-monitoring/
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="DBB14232C2E6DD0600678372055DB4549BB0A6FB64249367D4C07F8A1D9B8D6C">public void ModuleMdDocumentationEnabled</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Enable Server Structure Documentation for Developers Using RootPath, - Block File
+                Browsing Is Good for Server with Documentation only Or Use for Show WebPage and Copy
+                "Only HTML"
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="E313E3A479F0FC1D0ED83B231764E372FC4B5F376352CDC65A907C6F32540312">public void ModuleDbDiagramGeneratorEnabled</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Enable Automatic Database Diagram for Simple show Database structure with All bingings
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="FDD1DFE01DBB98EC136B731C4549090FCBCB55488E82E4B9BE4BBCC6C0737CEF">public void ModuleHealthServicePath</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Api URL cesta Serveru na které bude Dohledové centrum k dispozici
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="88676F3049C461DA82D24140381B611CF56D23F06EC81D767388172C81E045D8">public void ModuleSwaggerApiDocPath</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Api URL cesta Serveru na které bude API Dokumentace a Testovací rozhraní k dispozici
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="D9D7E91D869AFEF52CEBB40249B7AB78335372FF4FEF58CB82C4635778BE4AE8">public void ModuleHealthServiceMessageOnChangeOnly</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Zaznamenávat Logování/zaslání zprávy pouze při změně z OK-&gt;FAIL, jinak bude
+                zaznamenáno v každém cyklu
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="ADCAA0F0D88A8050C25A12A145C75BA7053AAB4347E939E24EDFD2AC98CBD572">public void ModuleDBEntitySchemaPath</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Cestana které se Schema Zobrazí,
+                default: /DBEntitySchema
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="BBB2AB8448C2720554C7CE9953300358C8AFC1A0432A1817EE90B69096932629">public void ModuleDBEntitySchemaEnabled</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Modul Zobrazení DB Entitity Schema
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="8683A0A8F0C3BB22E2044136F2828C868F64B4E38D2EAF33F04514ACA5FEBAAC">public void ModuleCSharpCodeBuilder</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Online Správa Projektu Serveru a vývoj
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="1608D156F479CA8F20175656445591607B11C70E435DC6264055F90729E7EA61">public void WebRazorPagesEngineEnabled</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Enable Razor WebPages support engine with Correct Configuration for Automaping from
+                folder 'ServerCorePages'
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="E8EF2054B54DD51AB20FBA776D5A7B7EAFDA63AC9A4ADEA28546756F6EE4C406">public void WebMvcPagesEngineEnabled</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Enable Mvc WebPages support engine with Correct Configuration
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="A758D71E46A139E59E5075AAB11ED42F9DBB16D63639208CEACAD4D9C2E084D8">public void WebSocketEngineEnabled</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Enable WebSocket Engine with Default Example Api Controller
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="92512AB6B0BBF83BF15675BF51BCDEF9E3C8032AA23ECC260BDE14C407784CFA">public void WebBrowserContentEnabled</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Enable WebPages File Browsing from server Url on Server
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="147BB7ED9930C7538435B1F57EDA32784563B4AD31B6C4E215F97B534E1433BA">public void WebSocketServerMonitorEnabled</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Server support online multi watch Logging Its Run on Websocket and the Log Messages are
+                sent for All opened connections for wathing on Path: ServerCoreMonitor You can enable
+                Mass Email Api
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="93926809715A490953F6BAC22401D58ECD2B42C86B8E5774AC33B27F00E06C6F">public void WebRSSFeedsEnabled</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Zapnout Generování RSS fédů z položek, novinek
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="3C034B14FDE25DD4CC31433F301E76869D296E568496E5A0A128B1099477673E">public void WebRobotTxtFileEnabled</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                zapnout zobrazení souboru Robot.txt, obsah se bere z nastavení Portálu
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="8A5E415ADAC113B5C1F4F6F0BCE14C30EB330C0A002A3E12BCD473B96650443A">public void WebSitemapFileEnabled</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Generovaný Soubor Sitemap z Menu Portálu
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="54C485F70DF79075FDBA451D8C869F63C1B041B0608AB42897690DF6617569F3">public void ModuleWebDataManagerEnabled</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Module: AutoGenerated Database DataManager for working with Data Running only in Debug
+                mode for simple Develop, can be modified. All changes are Reflected after restart server
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="80083E1D696B975D2AA51957E56AD636C12F8EA25B9F83F3C8D98C264100AADF">public void WebLiveDataMonitorEnabled</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Enable Server Static Folder Monitor for Data Changes And immediatelly update all Api,
+                Endpoints, Client Browser
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="D604999F6B7CD1A3780540A6FEDCC0F41FB7DEDAF7F53A6C64CBE603FAE58CAB">public void WebSocketGlobalNotifyPath</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                WebPortal Global Notify Path on WebSocket for sending messages from scheduler
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="2DC05AB965FA9852F7522368FC49C86EF771153F19AF2B5EDDA5883800E41BF9">public void WebRazorPagesCompileOnRuntime</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Provádí kompilaci Za běhu Serveru. Tzn.. Podporuje Vkládání Stránek Externě
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            
+
+            
+        </div>
+
+    </div>
+
+    <div id="footer">
+        XMLDocumentToHtml: Copyright (C) 2018 - 2020 Aona Suzutsuki.
+    </div>
+
+</body>
+</html>

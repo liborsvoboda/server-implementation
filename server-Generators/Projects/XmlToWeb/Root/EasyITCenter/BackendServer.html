@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0" />
+    <meta name="author" content="Aona Suzutsuki" />
+    <title>BackendServer Class</title>
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <link rel="stylesheet" type="text/css" href="../css/menu-icon.css" />
+    <link rel="stylesheet" type="text/css" href="../css/menu-anim.css" />
+    <link rel="stylesheet" type="text/css" href="../css/table.css" />
+    <link rel="stylesheet" href="../syntaxhighlighter/css/shCore.css" type="text/css" />
+    <link rel="stylesheet" href="../syntaxhighlighter/css/shThemeDefault.css" type="text/css" />
+    <script type="text/javascript" src="../syntaxhighlighter/js/shCore.js"></script>
+    <script type="text/javascript" src="../syntaxhighlighter/js/shBrushCSharp.js"></script>
+    <script src="../js/jquery-1.7.1.min.js"></script>
+    <script src="../js/common.js"></script>
+    <style type="text/css">
+    </style>
+    <script>
+        $(function () {
+            SyntaxHighlighter.defaults.toolbar = false;
+            SyntaxHighlighter.all();
+
+            registMenu();
+        });
+    </script>
+</head>
+<body>
+
+    <div id="body-container">
+
+        <div id="menu-container">
+            <div id="top-menu-bt-cover">
+                <a class="menu-trigger" href="javascript:void(0);">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+        </div>
+
+        <div id="menu">
+            <ul>
+                <li><a href="../index.html">Index</a></li>
+                <li>EasyITCenter
+                    <ul>
+                        <li>Controllers
+                            <ul>
+                                <li><a href="../EasyITCenter/Controllers/EasyITCenterStoredProceduresListApi.html">EasyITCenterStoredProceduresListApi</a></li>
+                                <li><a href="../EasyITCenter/Controllers/ExpertDocApi/ExpertDocApi.html">ExpertDocApi</a></li>
+                                <li><a href="../EasyITCenter/Controllers/ServerDocApi/ServerDocApi.html">ServerDocApi</a></li>
+                                <li><a href="../EasyITCenter/Controllers/SystemWebDocApi/SystemWebDocApi.html">SystemWebDocApi</a></li>
+                                <li><a href="../EasyITCenter/Controllers/WebPagesAdminGroupMenuListApi/WebPagesAdminGroupMenuListApi.html">WebPagesAdminGroupMenuListApi</a></li>
+                                <li><a href="../EasyITCenter/Controllers/WebPagesMessagesListApi/WebPagesMessagesListApi.html">WebPagesMessagesListApi</a></li>
+                            </ul>
+                        </li>
+                        <li>ServerCoreDBSettings
+                            <ul>
+                                <li><a href="../EasyITCenter/ServerCoreDBSettings/ServerCoreLoggerWS.html">ServerCoreLoggerWS</a></li>
+                                <li><a href="../EasyITCenter/ServerCoreDBSettings/ServerDbDgmlSchemaApi.html">ServerDbDgmlSchemaApi</a></li>
+                                <li><a href="../EasyITCenter/ServerCoreDBSettings/ServerEmailerApi.html">ServerEmailerApi</a></li>
+                                <li><a href="../EasyITCenter/ServerCoreDBSettings/RSSLoad/RSSLoad.html">RSSLoad</a></li>
+                                <li><a href="../EasyITCenter/ServerCoreDBSettings/SomeRSSProvider.html">SomeRSSProvider</a></li>
+                                <li><a href="../EasyITCenter/ServerCoreDBSettings/ServerRssFeedApi.html">ServerRssFeedApi</a></li>
+                                <li><a href="../EasyITCenter/ServerCoreDBSettings/ServerWebPagesExportsApi.html">ServerWebPagesExportsApi</a></li>
+                                <li><a href="../EasyITCenter/ServerCoreDBSettings/ServerWebPagesExportApi/ServerWebPagesExportApi.html">ServerWebPagesExportApi</a></li>
+                                <li><a href="../EasyITCenter/ServerCoreDBSettings/RobotsController.html">RobotsController</a></li>
+                                <li><a href="../EasyITCenter/ServerCoreDBSettings/SitemapController.html">SitemapController</a></li>
+                                <li><a href="../EasyITCenter/ServerCoreDBSettings/ServerDynamicSqlApi.html">ServerDynamicSqlApi</a></li>
+                                <li><a href="../EasyITCenter/ServerCoreDBSettings/ServerManagementApi.html">ServerManagementApi</a></li>
+                                <li><a href="../EasyITCenter/ServerCoreDBSettings/ServerOpenGraphApi.html">ServerOpenGraphApi</a></li>
+                                <li><a href="../EasyITCenter/ServerCoreDBSettings/SystemBuilderOnlinePreviewApi/SystemBuilderOnlinePreviewApi.html">SystemBuilderOnlinePreviewApi</a></li>
+                                <li><a href="../EasyITCenter/ServerCoreDBSettings/WebPagesSystemDataGetOnlyApi.html">WebPagesSystemDataGetOnlyApi</a></li>
+                                <li><a href="../EasyITCenter/ServerCoreDBSettings/WebPagesSystemToolsApi/WebPagesSystemToolsApi.html">WebPagesSystemToolsApi</a></li>
+                                <li><a href="../EasyITCenter/ServerCoreDBSettings/WebPagesUserApi/WebPagesUserApi.html">WebPagesUserApi</a></li>
+                                <li><a href="../EasyITCenter/ServerCoreDBSettings/WebProviderGetOnlyApi.html">WebProviderGetOnlyApi</a></li>
+                                <li><a href="../EasyITCenter/ServerCoreDBSettings/EasyITCenterContext.html">EasyITCenterContext</a></li>
+                                <li><a href="../EasyITCenter/ServerCoreDBSettings/DatabaseContextExtensions.html">DatabaseContextExtensions</a></li>
+                                <li><a href="../EasyITCenter/ServerCoreDBSettings/WorkFlowContext.html">WorkFlowContext</a></li>
+                                <li><a href="../EasyITCenter/ServerCoreDBSettings/WorkflowContextExtensions.html">WorkflowContextExtensions</a></li>
+                                <li><a href="../EasyITCenter/ServerCoreDBSettings/StdAuthGenericProviderApi`3.html">StdAuthGenericProviderApi`3</a></li>
+                                <li><a href="../EasyITCenter/ServerCoreDBSettings/StdFreeGenericProviderApi`3.html">StdFreeGenericProviderApi`3</a></li>
+                                <li><a href="../EasyITCenter/ServerCoreDBSettings/SystemStdAuthGenericProviderApi`3.html">SystemStdAuthGenericProviderApi`3</a></li>
+                                <li><a href="../EasyITCenter/ServerCoreDBSettings/SystemStdFreeGenericProviderApi`3.html">SystemStdFreeGenericProviderApi`3</a></li>
+                            </ul>
+                        </li>
+                        <li>ControllersExtensions
+                            <ul>
+                                <li><a href="../EasyITCenter/ControllersExtensions/EasyITCenterAuthenticationApi/EasyITCenterAuthenticationApi.html">EasyITCenterAuthenticationApi</a></li>
+                                <li><a href="../EasyITCenter/ControllersExtensions/EasyITCenterBackendCheckApi.html">EasyITCenterBackendCheckApi</a></li>
+                                <li><a href="../EasyITCenter/ControllersExtensions/SoftwareTriggers.html">SoftwareTriggers</a></li>
+                                <li><a href="../EasyITCenter/ControllersExtensions/ServerCorePostFileRotatorApi.html">ServerCorePostFileRotatorApi</a></li>
+                                <li><a href="../EasyITCenter/ControllersExtensions/ServerToolsMinifierApi.html">ServerToolsMinifierApi</a></li>
+                                <li><a href="../EasyITCenter/ControllersExtensions/ServerCoreAutoGeneratorApi.html">ServerCoreAutoGeneratorApi</a></li>
+                                <li><a href="../EasyITCenter/ControllersExtensions/ServerCoreWebToolsGenApi.html">ServerCoreWebToolsGenApi</a></li>
+                            </ul>
+                        </li>
+                        <li>DBModel
+                            <ul>
+                                <li><a href="../EasyITCenter/DBModel/DBResult.html">DBResult</a></li>
+                                <li><a href="../EasyITCenter/DBModel/DBResultMessage.html">DBResultMessage</a></li>
+                                <li><a href="../EasyITCenter/DBModel/AuthenticateResponse.html">AuthenticateResponse</a></li>
+                                <li><a href="../EasyITCenter/DBModel/SetReportFilter.html">SetReportFilter</a></li>
+                                <li><a href="../EasyITCenter/DBModel/IdFilter.html">IdFilter</a></li>
+                                <li><a href="../EasyITCenter/DBModel/NameFilter.html">NameFilter</a></li>
+                                <li><a href="../EasyITCenter/DBModel/CustomString.html">CustomString</a></li>
+                                <li><a href="../EasyITCenter/DBModel/SystemOperationMessage.html">SystemOperationMessage</a></li>
+                                <li><a href="../EasyITCenter/DBModel/GenericTable.html">GenericTable</a></li>
+                                <li><a href="../EasyITCenter/DBModel/AutoGenRequest.html">AutoGenRequest</a></li>
+                                <li><a href="../EasyITCenter/DBModel/AutoGenConnectionString.html">AutoGenConnectionString</a></li>
+                                <li><a href="../EasyITCenter/DBModel/UploadGeneratorFiles.html">UploadGeneratorFiles</a></li>
+                                <li><a href="../EasyITCenter/DBModel/UploadFileData.html">UploadFileData</a></li>
+                                <li><a href="../EasyITCenter/DBModel/CarouselImage.html">CarouselImage</a></li>
+                                <li><a href="../EasyITCenter/DBModel/CarouselVideo.html">CarouselVideo</a></li>
+                            </ul>
+                        </li>
+                        <li>ServerCoreWebPages
+                            <ul>
+                                <li><a href="../EasyITCenter/ServerCoreWebPages/DBWebApiResponses.html">DBWebApiResponses</a></li>
+                                <li><a href="../EasyITCenter/ServerCoreWebPages/ServerWebPagesLogin.html">ServerWebPagesLogin</a></li>
+                                <li><a href="../EasyITCenter/ServerCoreWebPages/ServerWebPagesToken.html">ServerWebPagesToken</a></li>
+                                <li><a href="../EasyITCenter/ServerCoreWebPages/EmailVerification.html">EmailVerification</a></li>
+                                <li><a href="../EasyITCenter/ServerCoreWebPages/WebRegistration.html">WebRegistration</a></li>
+                                <li><a href="../EasyITCenter/ServerCoreWebPages/UserConfig.html">UserConfig</a></li>
+                                <li><a href="../EasyITCenter/ServerCoreWebPages/WebMessage.html">WebMessage</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../EasyITCenter/BackendServer.html">BackendServer</a></li>
+                        <li>ServerCoreStructure
+                            <ul>
+                                <li><a href="../EasyITCenter/ServerCoreStructure/ServerConfigSettings.html">ServerConfigSettings</a></li>
+                                <li><a href="../EasyITCenter/ServerCoreStructure/MailRequest.html">MailRequest</a></li>
+                                <li><a href="../EasyITCenter/ServerCoreStructure/ServerStatuses.html">ServerStatuses</a></li>
+                                <li><a href="../EasyITCenter/ServerCoreStructure/ProcessClass.html">ProcessClass</a></li>
+                                <li><a href="../EasyITCenter/ServerCoreStructure/ServerLocalDbDials.html">ServerLocalDbDials</a></li>
+                                <li><a href="../EasyITCenter/ServerCoreStructure/ServerRuntimeData.html">ServerRuntimeData</a></li>
+                                <li><a href="../EasyITCenter/ServerCoreStructure/WebSocketExtension.html">WebSocketExtension</a></li>
+                                <li><a href="../EasyITCenter/ServerCoreStructure/ServerCoreAutoScheduler.html">ServerCoreAutoScheduler</a></li>
+                                <li><a href="../EasyITCenter/ServerCoreStructure/AutoScheduledJob.html">AutoScheduledJob</a></li>
+                                <li><a href="../EasyITCenter/ServerCoreStructure/DelegateHealthCheckPublisher.html">DelegateHealthCheckPublisher</a></li>
+                                <li><a href="../EasyITCenter/ServerCoreStructure/CommunicationController.html">CommunicationController</a></li>
+                                <li><a href="../EasyITCenter/ServerCoreStructure/WebSocketLogProvider.html">WebSocketLogProvider</a></li>
+                                <li><a href="../EasyITCenter/ServerCoreStructure/WebSocketLogger.html">WebSocketLogger</a></li>
+                                <li>CoreOperations
+                                    <ul>
+                                        <li><a href="../EasyITCenter/ServerCoreStructure/CoreOperations/GetOperatingSystemInfo.html">GetOperatingSystemInfo</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="../EasyITCenter/ServerCoreStructure/DataOperations/DataOperations.html">DataOperations</a></li>
+                                <li><a href="../EasyITCenter/ServerCoreStructure/DbOperations.html">DbOperations</a></li>
+                                <li><a href="../EasyITCenter/ServerCoreStructure/FileOperations/FileOperations.html">FileOperations</a></li>
+                                <li><a href="../EasyITCenter/ServerCoreStructure/WebToolsOperations.html">WebToolsOperations</a></li>
+                                <li><a href="../EasyITCenter/ServerCoreStructure/ServerCoreWebHelpers.html">ServerCoreWebHelpers</a></li>
+                            </ul>
+                        </li>
+                        <li>ServerCoreServers
+                            <ul>
+                                <li><a href="../EasyITCenter/ServerCoreServers/HostedFtpServer/HostedFtpServer.html">HostedFtpServer</a></li>
+                                <li><a href="../EasyITCenter/ServerCoreServers/HostedFtpServerMembershipProvider.html">HostedFtpServerMembershipProvider</a>
+                                    <ul>
+                                        <li><a href="../EasyITCenter/ServerCoreServers/HostedFtpServerMembershipProvider/CustomFtpUser.html">CustomFtpUser</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>ServerCoreConfiguration
+                            <ul>
+                                <li><a href="../EasyITCenter/ServerCoreConfiguration/ServerConfigurationServices.html">ServerConfigurationServices</a></li>
+                                <li><a href="../EasyITCenter/ServerCoreConfiguration/ServerEnablingServices.html">ServerEnablingServices</a></li>
+                                <li><a href="../EasyITCenter/ServerCoreConfiguration/ServerModules.html">ServerModules</a></li>
+                                <li><a href="../EasyITCenter/ServerCoreConfiguration/ServerModulesEnabling.html">ServerModulesEnabling</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../EasyITCenter/Startup.html">Startup</a></li>
+                        <li><a href="../EasyITCenter/MimeTypes.html">MimeTypes</a></li>
+                    </ul>
+                </li>
+                <li>UploadFilesServer
+                    <ul>
+                        <li>Controllers
+                            <ul>
+                                <li><a href="../UploadFilesServer/Controllers/ServerWebsiteStaticFilesApi/ServerWebsiteStaticFilesApi.html">ServerWebsiteStaticFilesApi</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>ServerCorePages
+                    <ul>
+                        <li><a href="../ServerCorePages/ErrorModel/ErrorModel.html">ErrorModel</a></li>
+                        <li><a href="../ServerCorePages/IndexModel.html">IndexModel</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+
+        <div id="body-content">
+            <div>
+                <h1>BackendServer Class</h1>
+                <div>Namespace: EasyITCenter</div>
+                <div id="inherited">Inherited: <span class="specific-element">System.Object</span></div>
+            </div>
+            <br />
+            Server Main Definition Starting Point Of Project
+            <br />
+            <div>
+                <h3>Methods</h3>
+                <ol>
+                    <li><a href="#13204CAE160F8B6493039782B7FA80EDAFCB28F96C2D6C2CDF8694E8D5CF2C79">Main(string[] args)</a></li>
+                    <li><a href="#A58CD476B5952219D2696923502A60059A3FA9A96EEE4ACB35C61AB253388BCA">RestartServer()</a></li>
+                    <li><a href="#4263807C2E8E9ED1BAB4B618BE240013989A1F87609DBBFB36982AF05E85EE9D">StartServer()</a></li>
+                    <li><a href="#EB79E0845838EF2991621346010E1C9F2648EFD365A5199A4ACD890BB96DCAD7">BuildWebHost(string[] args)</a></li>
+                    <li><a href="#EE7A9D98D25E0B0F98FB23D59F8AC8DAA6D8C171D7297DE71138D97DA2497DDC">ServerStartupDbDataLoading()</a></li>
+                    <li><a href="#EEB3F3E69BF941A964BBDD34157C87C733D431DA0DF5719E36455B1D484340B7">CheckLicense()</a></li>
+                    <li><a href="#7E483DEA40A88FF65D797EB73E21195A39776E92C808B7BF5924A815B040449A">LoadConfigurationFromFile()</a></li>
+                    <li><a href="#5D0D18885FB52938E038193C27A674E4B9E98A9FB95B2239F9E76B46973B95E6">LoadConfigurationFromDb()</a></li>
+                </ol>
+                <h3>Fields</h3>
+                <ol>
+                    <li><a href="#B888EF1AD2BB0017157A6154EE1A7137DB64102D88663B96629A27CF23B0FC64">ServerConfigSettings</a></li>
+                    <li><a href="#2CF733F6AE583210C2E0FE527E5BEAE9111F71603A55AC3E13BF2C0C5077954B">ServerRuntimeData</a></li>
+                </ol>
+
+            </div>
+            
+
+            
+
+            
+
+            
+            <br />
+            <div id="methods">
+                <h2>Methods</h2>
+                <br />
+                <div class="method-elem">
+                    <h3 id="13204CAE160F8B6493039782B7FA80EDAFCB28F96C2D6C2CDF8694E8D5CF2C79">public Main(string[] args)</h3>
+                    <div class="method-content">
+                        
+                        
+                        <table class="parameter">
+                            <caption>Parameters</caption>
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th class="elem-name">Name</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td aria-label="Type"><div class="specific-element">string[]</div></td>
+                                    <td aria-label="Name" class="elem-name">args</td>
+                                    <td aria-label="Description"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        
+                        <div class="elem-content">
+                            Server Startup Process
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="A58CD476B5952219D2696923502A60059A3FA9A96EEE4ACB35C61AB253388BCA">public RestartServer()</h3>
+                    <div class="method-content">
+                        
+                        
+                        
+                        <div class="elem-content">
+                            Server Restart Controller
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="4263807C2E8E9ED1BAB4B618BE240013989A1F87609DBBFB36982AF05E85EE9D">public StartServer()</h3>
+                    <div class="method-content">
+                        
+                        
+                        
+                        <div class="elem-content">
+                            Server Start Controller
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="EB79E0845838EF2991621346010E1C9F2648EFD365A5199A4ACD890BB96DCAD7">public BuildWebHost(string[] args)</h3>
+                    <div class="method-content">
+                        
+                        
+                        <table class="parameter">
+                            <caption>Parameters</caption>
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th class="elem-name">Name</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td aria-label="Type"><div class="specific-element">string[]</div></td>
+                                    <td aria-label="Name" class="elem-name">args</td>
+                                    <td aria-label="Description"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        
+                        <div class="elem-content">
+                            Final Preparing Server HostBuilder Definition Exit 10 Is missing or Format Problem with
+                Configuration File
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="EE7A9D98D25E0B0F98FB23D59F8AC8DAA6D8C171D7297DE71138D97DA2497DDC">public ServerStartupDbDataLoading()</h3>
+                    <div class="method-content">
+                        
+                        
+                        
+                        <div class="elem-content">
+                            Server Startup DB Data loading for minimize DB Connect TO Frequency Dials Without
+                Changes With Full Auto Filling Non Exist Records
+                Example: LanguageList
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="EEB3F3E69BF941A964BBDD34157C87C733D431DA0DF5719E36455B1D484340B7">public CheckLicense()</h3>
+                    <div class="method-content">
+                        
+                        
+                        
+                        <div class="elem-content">
+                            Checking Valid License on StartUp
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="7E483DEA40A88FF65D797EB73E21195A39776E92C808B7BF5924A815B040449A">public LoadConfigurationFromFile()</h3>
+                    <div class="method-content">
+                        
+                        
+                        
+                        <div class="elem-content">
+                            Server Core: Load Configuration From Config File In Startup Folder/Data/config.json
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="5D0D18885FB52938E038193C27A674E4B9E98A9FB95B2239F9E76B46973B95E6">public LoadConfigurationFromDb()</h3>
+                    <div class="method-content">
+                        
+                        
+                        
+                        <div class="elem-content">
+                            Server Core: Load Configuration From Database First Must be From File With DB
+                Connection, Others File Settings than DBconnection is Optional
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            
+
+            
+
+            
+            <br />
+            <div id="fields">
+                <h2>Fields</h2>
+                <br />
+                <div class="method-elem">
+                    <h3 id="B888EF1AD2BB0017157A6154EE1A7137DB64102D88663B96629A27CF23B0FC64">public void ServerConfigSettings</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Startup Server Initialization Server Setting Data
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="2CF733F6AE583210C2E0FE527E5BEAE9111F71603A55AC3E13BF2C0C5077954B">public void ServerRuntimeData</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Startup Server Initialization Server Runtime Data
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            
+        </div>
+
+    </div>
+
+    <div id="footer">
+        XMLDocumentToHtml: Copyright (C) 2018 - 2020 Aona Suzutsuki.
+    </div>
+
+</body>
+</html>

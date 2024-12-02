@@ -1,0 +1,24 @@
+﻿[book]
+title = "EIC&ESB Inteli Doc Generator"
+authors = ["Libor Svoboda"]
+language = "en"
+multilingual = false
+src = "src"
+description = "EIC&ESB Inteli Doc Generator"
+
+
+[output.html]
+theme = "rust"
+default-theme = "rust"
+additional-js = ["./js/jquery-3.6.0.min.js","./js/mermaid.min.cdn.js","./js/globalscript.js"]
+
+[output.html.playground]
+editable = false
+copyable = true
+copy-js = true 
+line-numbers = false 
+runnable = true 
+
+[output.html.print]
+enable = true 
+page-break = true

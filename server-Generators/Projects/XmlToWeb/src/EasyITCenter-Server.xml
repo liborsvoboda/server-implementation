@@ -1,0 +1,2151 @@
+﻿<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EasyITCenter</name>
+    </assembly>
+    <members>
+        <member name="T:EasyITCenter.Controllers.EasyITCenterStoredProceduresListApi">
+            <summary>
+            StoredSpocedures Central Library With Return Dynamic DataList
+            </summary>
+            <seealso cref="T:Microsoft.AspNetCore.Mvc.ControllerBase"/>
+        </member>
+        <member name="M:EasyITCenter.Controllers.EasyITCenterStoredProceduresListApi.GetSystemSpGetTableList">
+            <summary>
+            Gets Table List for Reporting
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.Controllers.EasyITCenterStoredProceduresListApi.GetSystemTableList">
+            <summary>
+            Gets Form Agendas Pages List For System Menu Definition.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.Controllers.EasyITCenterStoredProceduresListApi.GetSystemSpGetUserMenuList">
+            <summary>
+            Api For Logged User with Menu Datalist
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.Controllers.ExpertDocApi.GetDocumentationGroupedList">
+            <summary>
+            ExpertDocManager Group Documentation Request Api
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.Controllers.ExpertDocApi.GetDocumentationGroupedList(System.Int32)">
+            <summary>
+            ExpertDocManager Group Documentation Request Api
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="F:EasyITCenter.Controllers.ServerDocApi._hostingEnvironment">
+            <summary>
+            For wwwroot folder Update with detect changes and modify static pages
+            </summary>
+        </member>
+        <member name="M:EasyITCenter.Controllers.ServerDocApi.GenerateMdBook">
+            <summary>
+            Server Inteligent Documentation Generator Api StratupPath is WebFolder On Development is
+            need WebRootPath WegbRootPath is Development Folder
+            </summary>
+        </member>
+        <member name="F:EasyITCenter.Controllers.SystemWebDocApi._hostingEnvironment">
+            <summary>
+            For wwwroot folder Update with detect changes and modify static pages
+            </summary>
+        </member>
+        <member name="M:EasyITCenter.Controllers.SystemWebDocApi.GetMdLibraryPreview(System.Int32)">
+            <summary>
+            Documentation Code Manager Html Preview Api Startup Viewer
+            </summary>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:EasyITCenter.Controllers.SystemWebDocApi.GetMdPreviewFile(System.Int32)" -->
+        <member name="M:EasyITCenter.Controllers.SystemWebDocApi.GetMdDocumentPreview(System.Int32)">
+            <summary>
+            Documentation Code Manager Html Preview Api Startup Viewer
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.Controllers.WebPagesAdminGroupMenuListApi.InsertOrUpdateGroupWebMenuList(EasyITCenter.ServerCoreWebPages.WebSettingList1)">
+            <summary>
+            WebAdmin API
+            </summary>
+            <param name="record">The record.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.Controllers.WebPagesAdminGroupMenuListApi.DeleteWebGroupMenuList(System.String)">
+            <summary>
+            WebAdmin API
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.Controllers.WebPagesMessagesListApi.InsertWebPageMessagesList(EasyITCenter.ServerCoreWebPages.WebMessage)">
+            <summary>
+            Inserts the web page messages list.
+            </summary>
+            <param name="webdata">The webdata.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.Controllers.WebPagesMessagesListApi.GetWebPageMessagesList">
+            <summary>
+            Gets the web page messages list.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:EasyITCenter.ServerCoreDBSettings.ServerCoreLoggerWS">
+            <summary>
+            WEBSocket Template still not used Ideal for Terminal Panels, chat, controlling services
+            </summary>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreDBSettings.ServerCoreLoggerWS.GetBySocketAPIPath(System.String)">
+            <summary>
+            Universal WebSocket API Definitions for Connection Paths and Registering To Server
+            Central List ow WebSocket Connections
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreDBSettings.ServerCoreLoggerWS.Get">
+            <summary>
+            WebSocket Registration Connection API Example
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreDBSettings.ServerCoreLoggerWS.Echo(Microsoft.AspNetCore.Http.HttpContext,System.Net.WebSockets.WebSocket)">
+            <summary>
+            WebSocket Communication Set Examle
+            </summary>
+            <param name="context">  The context.</param>
+            <param name="webSocket">The web socket.</param>
+            <returns></returns>
+        </member>
+        <member name="T:EasyITCenter.ServerCoreDBSettings.ServerDbDgmlSchemaApi">
+            <summary>
+            Database Schema Diagram Controller
+            </summary>
+            <seealso cref="T:Microsoft.AspNetCore.Mvc.Controller"/>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreDBSettings.ServerDbDgmlSchemaApi.#ctor(EasyITCenter.ServerCoreDBSettings.EasyITCenterContext)">
+            <summary>
+            Initializes a new instance of the <see cref="!:DgmlSchemaApi"/> class.
+            </summary>
+            <param name="context">The context.</param>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreDBSettings.ServerDbDgmlSchemaApi.GetDgml">
+            <summary>
+            Creates a DGML class diagram of most of the entities in the project wher you go to
+            localhost/dgml See https://github.com/ErikEJ/SqlCeToolbox/wiki/EF-Core-Power-Tools
+            </summary>
+            <returns>a DGML class diagram</returns>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreDBSettings.ServerDbDgmlSchemaApi.Get">
+            <summary>
+            Get Full DataBase SQL Script
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:EasyITCenter.ServerCoreDBSettings.ServerEmailerApi">
+            <summary>
+            Server Email sender Api for logged Communication
+            </summary>
+            <seealso cref="T:Microsoft.AspNetCore.Mvc.ControllerBase"/>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreDBSettings.RSSLoad.GetRssFeed(System.String)">
+            <summary>
+            Load RSS Feed
+            </summary>
+            <param name="rssUrl"></param>
+            <returns></returns>
+        </member>
+        <member name="T:EasyITCenter.ServerCoreDBSettings.SomeRSSProvider">
+            <summary>
+            RSS Provider
+            </summary>
+        </member>
+        <member name="T:EasyITCenter.ServerCoreDBSettings.ServerRssFeedApi">
+            <summary>
+            Server Restart Api for Remote Control
+            </summary>
+            <seealso cref="T:Microsoft.AspNetCore.Mvc.ControllerBase"/>
+        </member>
+        <member name="T:EasyITCenter.ServerCoreDBSettings.ServerWebPagesExportsApi">
+            <summary>
+            Server Root Controller Used by Server Webpages
+            </summary>
+            <seealso cref="T:Microsoft.AspNetCore.Mvc.ControllerBase"/>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreDBSettings.ServerWebPagesExportApi.ExportXamlCz">
+            <summary>
+            Update Translation Table By All Tables and Field Names For Export Offline Language
+            Dictionary CZ for System
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreDBSettings.ServerWebPagesExportApi.ExportXamlEn">
+            <summary>
+            Update Translation Table By All Tables and Field Names For Export Offline Language
+            Dictionary EN for System
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreDBSettings.ServerWebPagesExportApi.ExportMinimalStaticWebPages">
+            <summary>
+            Minimal Export of Page for Running
+            on every Web servers Without Needs anythink
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:EasyITCenter.ServerCoreDBSettings.RobotsController">
+            <summary>
+            robots.txt routing
+            </summary>
+            <seealso cref="T:Microsoft.AspNetCore.Mvc.Controller"/>
+        </member>
+        <member name="T:EasyITCenter.ServerCoreDBSettings.SitemapController">
+            <summary>
+            Sitemap.xml Routing
+            </summary>
+            <seealso cref="T:Microsoft.AspNetCore.Mvc.Controller"/>
+        </member>
+        <member name="T:EasyITCenter.ServerCoreDBSettings.ServerDynamicSqlApi">
+            <summary>
+            Server Restart Api for Remote Control
+            </summary>
+            <seealso cref="T:Microsoft.AspNetCore.Mvc.ControllerBase"/>
+        </member>
+        <member name="T:EasyITCenter.ServerCoreDBSettings.ServerManagementApi">
+            <summary>
+            Server Restart Api for Remote Control
+            </summary>
+            <seealso cref="T:Microsoft.AspNetCore.Mvc.ControllerBase"/>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreDBSettings.ServerManagementApi.ServerSchedulerStart">
+            <summary>
+            AutoScheduler Server Controls
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreDBSettings.ServerManagementApi.ServerRestart">
+            <summary>
+            Core Server Restart Control Api
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreDBSettings.ServerManagementApi.FtpServerStart">
+            <summary>
+            FtpServerStart Api
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreDBSettings.ServerManagementApi.FtpServerStop">
+            <summary>
+            FtpServerStop Api
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:EasyITCenter.ServerCoreDBSettings.ServerOpenGraphApi">
+            <summary>
+            Server Email sender Api for logged Communication
+            </summary>
+            <seealso cref="T:Microsoft.AspNetCore.Mvc.ControllerBase"/>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreDBSettings.ServerOpenGraphApi.GetFromUrl(EasyITCenter.DBModel.WebUrlRequest)">
+            <summary>
+            Documentation https://ogp.me/
+            Tool For Extend Loaded Html By Add Custom Metadata by Format OpenGraph
+            TODO Implement Inserting Metadata or How To Use
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreDBSettings.SystemBuilderOnlinePreviewApi.GetWebBuilderCodePreview(System.Int32)">
+            <summary>
+            SYSTEM WebBuilder Code Library Preview Api
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreDBSettings.SystemBuilderOnlinePreviewApi.GetWebBuilderMenuPreview(System.Int32)">
+            <summary>
+            SYSTEM WebBuilder Menu Preview Api
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreDBSettings.SystemBuilderOnlinePreviewApi.GetWebBuilderGlobalBodyBlockPreview(System.Int32)">
+            <summary>
+            SYSTEM WebBUilder Global Page Body Block Preview API
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="T:EasyITCenter.ServerCoreDBSettings.WebPagesSystemDataGetOnlyApi">
+            <summary>
+            Server WebPages Controller
+            </summary>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreDBSettings.WebPagesSystemDataGetOnlyApi.GetDeveloperNewsList">
+            <summary>
+            Web Developer News Info Api
+            </summary>
+            <param name="rec">The record.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreDBSettings.WebPagesSystemDataGetOnlyApi.GetMottoList">
+            <summary>
+            MottoList API for Web Portal
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreDBSettings.WebPagesSystemToolsApi.SaveNewMinifiedFile(EasyITCenter.ServerCoreWebPages.MinifiedFile)">
+            <summary>
+            Saving Minified File API Allowed Only In Savig Time Api 
+            Is Hidden Its Called Back From external minifier Tool
+            </summary>
+            <param name="rec">The record.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreDBSettings.WebPagesUserApi.PostSendVerifyCode(EasyITCenter.ServerCoreWebPages.EmailVerification)">
+            <summary>
+            WebPages Verification Email
+            </summary>
+            <param name="email">The email.</param>
+            <returns></returns>
+        </member>
+        <member name="T:EasyITCenter.ServerCoreDBSettings.WebProviderGetOnlyApi">
+            <summary>
+            Server Root Controller
+            </summary>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreDBSettings.WebProviderGetOnlyApi.GetTemplateWebMenuList">
+            <summary>
+            Provider: For Show EASY Menu Codes on WebPages
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreDBSettings.WebProviderGetOnlyApi.GetManagedCssJsScriptList">
+            <summary>
+            Provider: For Show EASY Script Codes on WebPages
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreDBSettings.WebProviderGetOnlyApi.GetSolutionToolList">
+            <summary>
+            Provider Its for Show Tools on WebPages
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:EasyITCenter.ServerCoreDBSettings.EasyITCenterContext">
+            <summary>
+            Server Main Database Settings Here is Included ScaffoldContext which is connected via Visual
+            Studio Tool Here can Be added customization which are not on the server Here is Extended the
+            Context with Insert News Functionality Customizing and implement Settings for Automatic
+            Adopted Database Schema for Unlimited Working and Operations For Specifics API schemas
+            </summary>
+        </member>
+        <member name="T:EasyITCenter.ServerCoreDBSettings.DatabaseContextExtensions">
+            <summary>
+            Database Context Extensions for All Types Procedures For Retun Data in procedure can be
+            Simple SELECT * XXX and you Create Same Class for returned DataSet
+            </summary>
+        </member>
+        <member name="T:EasyITCenter.ServerCoreDBSettings.WorkFlowContext">
+            <summary>
+            TODO  Inherit DB Context with 
+            Table Prefix
+            </summary>
+        </member>
+        <member name="T:EasyITCenter.ServerCoreDBSettings.WorkflowContextExtensions">
+            <summary>
+            Database Context Extensions for All Types Procedures For Retun Data in procedure can be
+            Simple SELECT * XXX and you Create Same Class for returned DataSet
+            </summary>
+        </member>
+        <member name="T:EasyITCenter.ServerCoreDBSettings.StdAuthGenericProviderApi`3">
+            <summary>
+            Server Restart Api for Remote Control
+            </summary>
+            <seealso cref="T:Microsoft.AspNetCore.Mvc.ControllerBase"/>
+        </member>
+        <member name="T:EasyITCenter.ServerCoreDBSettings.StdFreeGenericProviderApi`3">
+            <summary>
+            Server Restart Api for Remote Control
+            </summary>
+            <seealso cref="T:Microsoft.AspNetCore.Mvc.ControllerBase"/>
+        </member>
+        <member name="T:EasyITCenter.ServerCoreDBSettings.SystemStdAuthGenericProviderApi`3">
+            <summary>
+            </summary>
+            <seealso cref="T:Microsoft.AspNetCore.Mvc.ControllerBase"/>
+        </member>
+        <member name="T:EasyITCenter.ServerCoreDBSettings.SystemStdFreeGenericProviderApi`3">
+            <summary>
+            </summary>
+            <seealso cref="T:Microsoft.AspNetCore.Mvc.ControllerBase"/>
+        </member>
+        <member name="M:EasyITCenter.ControllersExtensions.EasyITCenterAuthenticationApi.Authenticate(System.String,System.String)">
+            <summary>
+            API Authenticated and Generate Token
+            </summary>
+            <param name="username"></param>
+            <param name="password"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ControllersExtensions.EasyITCenterAuthenticationApi.RefreshUserToken(System.String,EasyITCenter.DBModel.AuthenticateResponse)">
+            <summary>
+            API Refresh User Token
+            </summary>
+            <param name="username"></param>
+            <param name="token">   </param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ControllersExtensions.EasyITCenterAuthenticationApi.LifetimeValidator(System.Nullable{System.DateTime},System.Nullable{System.DateTime},Microsoft.IdentityModel.Tokens.SecurityToken,Microsoft.IdentityModel.Tokens.TokenValidationParameters)">
+            <summary>
+            API Token LifeTime Validator
+            </summary>
+            <param name="notBefore"></param>
+            <param name="expires">  </param>
+            <param name="token">    </param>
+            <param name="params">   </param>
+            <returns></returns>
+        </member>
+        <member name="T:EasyITCenter.ControllersExtensions.EasyITCenterBackendCheckApi">
+            <summary>
+            Simple Api for Checking Avaiability
+            </summary>
+            <seealso cref="T:Microsoft.AspNetCore.Mvc.ControllerBase"/>
+        </member>
+        <member name="M:EasyITCenter.ControllersExtensions.EasyITCenterBackendCheckApi.GetBackendCheckApi">
+            <summary>
+            Gets the backend check API.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:EasyITCenter.ControllersExtensions.SoftwareTriggers">
+            <summary>
+            Softwasre Triggers For Web and System Login/Visit History View
+            </summary>
+        </member>
+        <member name="M:EasyITCenter.ControllersExtensions.SoftwareTriggers.WriteVisit(System.String,System.Int32,System.String)">
+            <summary>
+            Trigger User Login History
+            </summary>
+            <param name="ipAddress"></param>
+            <param name="userId">   </param>
+            <param name="userName"> </param>
+        </member>
+        <member name="M:EasyITCenter.ControllersExtensions.SoftwareTriggers.WriteWebVisit(System.String)">
+            <summary>
+            Trigger Web IP Hosts History List
+            </summary>
+            <param name="ipAddress"></param>
+        </member>
+        <member name="T:EasyITCenter.ControllersExtensions.ServerCorePostFileRotatorApi">
+            <summary>
+            Server Root Controller
+            </summary>
+        </member>
+        <member name="M:EasyITCenter.ControllersExtensions.ServerCorePostFileRotatorApi.GetApiFileRotator(System.String)">
+            <summary>
+             WebApi ContentTool SubmitRotator
+            </summary>
+            <param name="filename"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ControllersExtensions.ServerCorePostFileRotatorApi.PostApiFileRotator(System.Collections.Generic.List{Microsoft.AspNetCore.Http.IFormFile})">
+            <summary>
+            WebApi ConentTool WebBuilder File Responser
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ControllersExtensions.ServerCorePostFileRotatorApi.PutApiFileRotator(System.Collections.Generic.List{Microsoft.AspNetCore.Http.IFormFile})">
+            <summary>
+            WebApi ConentTool WebBuilder File Responser
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:EasyITCenter.ControllersExtensions.ServerToolsMinifierApi">
+            <summary>
+            Server Root Controller
+            </summary>
+        </member>
+        <member name="M:EasyITCenter.ControllersExtensions.ServerToolsMinifierApi.MinifyAndSaveMinToPath(EasyITCenter.ServerCoreWebPages.WebFileList)">
+            <summary>
+            Minifi FileList And Save As Minify to FilePath
+            </summary>
+            <param name="filelist"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ControllersExtensions.ServerToolsMinifierApi.MinifyAndReturn(EasyITCenter.ServerCoreWebPages.WebFileList)">
+            <summary>
+            Minify FileList and Return Back Without Rename
+            </summary>
+            <param name="filelist"></param>
+            <returns></returns>
+        </member>
+        <member name="T:EasyITCenter.ControllersExtensions.ServerCoreAutoGeneratorApi">
+            <summary>
+            Server Auto Cloner Controller
+            </summary>
+        </member>
+        <member name="T:EasyITCenter.ControllersExtensions.ServerCoreWebToolsGenApi">
+            <summary>
+            Server Root Controller
+            </summary>
+        </member>
+        <member name="M:EasyITCenter.ControllersExtensions.ServerCoreWebToolsGenApi.GenerateEasyGallery(EasyITCenter.DBModel.UploadGeneratorFiles)">
+            <summary>
+            Easy Image Gallery Generator
+            </summary>
+            <param name="imageList">The image list.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ControllersExtensions.ServerCoreWebToolsGenApi.GenerateCarouselGallery(EasyITCenter.DBModel.UploadGeneratorFiles)">
+            <summary>
+            Image Carousel Generator
+            </summary>
+            <param name="imageList">The image list.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ControllersExtensions.ServerCoreWebToolsGenApi.GenerateCarouselVideoGallery(EasyITCenter.DBModel.UploadGeneratorFiles)">
+            <summary>
+            Video Carousel Generator
+            </summary>
+            <param name="videoList">The image list.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ControllersExtensions.ServerCoreWebToolsGenApi.GenerateVideoPlayList(EasyITCenter.DBModel.UploadGeneratorFiles)">
+            <summary>
+            Video Player + PlayList Generator
+            </summary>
+            <param name="videoList">The image list.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ControllersExtensions.ServerCoreWebToolsGenApi.GenerateXmlToMd(EasyITCenter.DBModel.UploadGeneratorFiles)">
+            <summary>
+            XmlToMD Generator
+            </summary>
+            <param name="fileList">The image list.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ControllersExtensions.ServerCoreWebToolsGenApi.GenerateMdToMdBook(EasyITCenter.DBModel.UploadGeneratorFiles)">
+            <summary>
+            MdToMdBook Generator
+            </summary>
+            <param name="fileList">The image list.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ControllersExtensions.ServerCoreWebToolsGenApi.GenerateImageBook(EasyITCenter.DBModel.UploadGeneratorFiles)">
+            <summary>
+            ImageBook Generator
+            </summary>
+            <param name="imageList">The image list.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ControllersExtensions.ServerCoreWebToolsGenApi.GenerateMedialPresentation(EasyITCenter.DBModel.UploadGeneratorFiles)">
+            <summary>
+            MedialPresentation from Images Generator
+            </summary>
+            <param name="imageList">The image list.</param>
+            <returns></returns>
+        </member>
+        <member name="T:EasyITCenter.DBModel.DBResult">
+            <summary>
+            Database response types definition
+            </summary>
+        </member>
+        <member name="T:EasyITCenter.DBModel.DBResultMessage">
+            <summary>
+            The DB result message.
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.DBModel.DBResultMessage.InsertedId">
+            <summary>
+            Gets or Sets the inserted id.
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.DBModel.DBResultMessage.Status">
+            <summary>
+            Gets or Sets the status.
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.DBModel.DBResultMessage.RecordCount">
+            <summary>
+            Gets or Sets the record count.
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.DBModel.DBResultMessage.ErrorMessage">
+            <summary>
+            Gets or Sets the error message.
+            </summary>
+        </member>
+        <member name="T:EasyITCenter.DBModel.AuthenticateResponse">
+            <summary>
+            The authenticate response.
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.DBModel.AuthenticateResponse.Id">
+            <summary>
+            Gets or Sets the id.
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.DBModel.AuthenticateResponse.Name">
+            <summary>
+            Gets or Sets the name.
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.DBModel.AuthenticateResponse.Surname">
+            <summary>
+            Gets or Sets the surname.
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.DBModel.AuthenticateResponse.Token">
+            <summary>
+            Gets or Sets the token.
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.DBModel.AuthenticateResponse.Expiration">
+            <summary>
+            Gets or Sets the expiration.
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.DBModel.AuthenticateResponse.Role">
+            <summary>
+            Gets or Sets the role.
+            </summary>
+        </member>
+        <member name="T:EasyITCenter.DBModel.SetReportFilter">
+            <summary>
+            Database Model Extension Definitions Its API Filter, Extended Classes, Translation, etc
+            </summary>
+        </member>
+        <member name="T:EasyITCenter.DBModel.IdFilter">
+            <summary>
+            Custom Class Definition for Filtering by record Id
+            </summary>
+        </member>
+        <member name="T:EasyITCenter.DBModel.NameFilter">
+            <summary>
+            Custom Class Definition for Filtering by string
+            </summary>
+        </member>
+        <member name="T:EasyITCenter.DBModel.CustomString">
+            <summary>
+            Custom Definition for Returning string List from Stored Procedures Name is ColumnName from
+            Stored Procedure Result
+            </summary>
+        </member>
+        <member name="T:EasyITCenter.DBModel.SystemOperationMessage">
+            <summary>
+            Custom Definition for Returning List with One Record from Operation Stored Procedures
+            </summary>
+        </member>
+        <member name="T:EasyITCenter.DBModel.GenericTable">
+            <summary>
+            Generic Table Snadard Fileds Public Class For Get Informations By System
+            </summary>
+        </member>
+        <member name="T:EasyITCenter.DBModel.AutoGenRequest">
+            <summary>
+            Custom Class For Server Generator Request Monitoring
+            </summary>
+        </member>
+        <member name="T:EasyITCenter.DBModel.AutoGenConnectionString">
+            <summary>
+            Custom Class For Check ConnectionString
+            </summary>
+        </member>
+        <member name="T:EasyITCenter.DBModel.UploadGeneratorFiles">
+            <summary>
+            Generator Uploading files for Generators
+            </summary>
+        </member>
+        <member name="T:EasyITCenter.DBModel.UploadFileData">
+            <summary>
+            Generator File Class structure
+            </summary>
+        </member>
+        <member name="T:EasyITCenter.DBModel.CarouselImage">
+            <summary>
+            Generator Carousel Image Class
+            </summary>
+        </member>
+        <member name="T:EasyITCenter.DBModel.CarouselVideo">
+            <summary>
+            Generator Carousel Video Class
+            </summary>
+        </member>
+        <member name="T:EasyITCenter.ServerCoreWebPages.DBWebApiResponses">
+            <summary>
+            WebApi Responses
+            </summary>
+        </member>
+        <member name="T:EasyITCenter.ServerCoreWebPages.ServerWebPagesLogin">
+            <summary>
+            Custom Class For Login over Server Web Pages
+            </summary>
+        </member>
+        <member name="T:EasyITCenter.ServerCoreWebPages.ServerWebPagesToken">
+            <summary>
+            Server WebPages Communication Token Definition for Security content And Load Allowed Content
+            </summary>
+        </member>
+        <member name="T:EasyITCenter.ServerCoreWebPages.EmailVerification">
+            <summary>
+            WebPages User Verification class
+            </summary>
+        </member>
+        <member name="T:EasyITCenter.ServerCoreWebPages.WebRegistration">
+            <summary>
+            WebPages User Registration class
+            </summary>
+        </member>
+        <member name="T:EasyITCenter.ServerCoreWebPages.UserConfig">
+            <summary>
+            Custom Class For UserConfig over Server Web Pages
+            </summary>
+        </member>
+        <member name="T:EasyITCenter.ServerCoreWebPages.WebMessage">
+            <summary>
+            Custom WebMessage Class For Server Web Pages
+            </summary>
+        </member>
+        <member name="T:EasyITCenter.BackendServer">
+            <summary>
+            Server Main Definition Starting Point Of Project
+            </summary>
+        </member>
+        <member name="F:EasyITCenter.BackendServer.ServerConfigSettings">
+            <summary>
+            Startup Server Initialization Server Setting Data
+            </summary>
+        </member>
+        <member name="F:EasyITCenter.BackendServer.ServerRuntimeData">
+            <summary>
+            Startup Server Initialization Server Runtime Data
+            </summary>
+        </member>
+        <member name="M:EasyITCenter.BackendServer.Main(System.String[])">
+            <summary>
+            Server Startup Process
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:EasyITCenter.BackendServer.RestartServer">
+            <summary>
+            Server Restart Controller
+            </summary>
+        </member>
+        <member name="M:EasyITCenter.BackendServer.StartServer">
+            <summary>
+            Server Start Controller
+            </summary>
+        </member>
+        <member name="M:EasyITCenter.BackendServer.BuildWebHost(System.String[])">
+            <summary>
+            Final Preparing Server HostBuilder Definition Exit 10 Is missing or Format Problem with
+            Configuration File
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.BackendServer.ServerStartupDbDataLoading">
+            <summary>
+            Server Startup DB Data loading for minimize DB Connect TO Frequency Dials Without
+            Changes With Full Auto Filling Non Exist Records
+            Example: LanguageList
+            </summary>
+        </member>
+        <member name="M:EasyITCenter.BackendServer.CheckLicense">
+            <summary>
+            Checking Valid License on StartUp
+            </summary>
+        </member>
+        <member name="M:EasyITCenter.BackendServer.LoadConfigurationFromFile">
+            <summary>
+            Server Core: Load Configuration From Config File In Startup Folder/Data/config.json
+            </summary>
+        </member>
+        <member name="M:EasyITCenter.BackendServer.LoadConfigurationFromDb">
+            <summary>
+            Server Core: Load Configuration From Database First Must be From File With DB
+            Connection, Others File Settings than DBconnection is Optional
+            </summary>
+        </member>
+        <member name="T:EasyITCenter.ServerCoreStructure.ServerConfigSettings">
+            <summary>
+            The server settings.
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.EmailerServiceEmailAddress">
+            <summary>
+            Service email, for info about not available service from HeatchCheck Can be used for
+            next Develop, automatic checking problems, missing data and all other Its Necessary for
+            Correct running Server Internal Core Monitoring
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.EmailerSMTPServerAddress">
+            <summary>
+            SMTP Server Address for Login to External Mail Server Its Necessary for Correct running
+            Server Internal Core Monitoring
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.EmailerSMTPPort">
+            <summary>
+            SMTP Port for Login to External Mail Server Its Necessary for Correct running Server
+            Internal Core Monitoring
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.EmailerSMTPSslIsEnabled">
+            <summary>
+            EmailerSMTPSslIsEnabled SSl Email Protocol for Login to External Mail Server Its
+            Necessary for Correct running Server Internal Core Monitoring
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.EmailerSMTPLoginUsername">
+            <summary>
+            SMTP UserName for Login to External Mail Server Its Necessary for Correct running Server
+            Internal Core Monitoring
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.EmailerSMTPLoginPassword">
+            <summary>
+            SMTP Password for Login to External Mail Server Its Necessary for Correct running Server
+            Internal Core Monitoring
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.DatabaseConnectionString">
+            <summary>
+            Server Database Connection string for Full Service of Database
+            Migration/Api/Check/Unlimited Develop !!!Warning: Check this connection for
+            Read/Write/Exec is enabled In Config File Must Be Only This Paramneter
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.DatabaseInternalCachingEnabled">
+            <summary>
+            Enable Disable Entity Framework Internal Cache I recommend turning it off : from Logic,
+            Duplicit Functionality with Database Server in complex process can generate problems
+            Recommended: false
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.DatabaseInternalCacheTimeoutMin">
+            <summary>
+            Time in Minutes for Database Valid Cache Data and Refreshing Duplicit Functionality with
+            Database Server
+            Recommended: 30
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.ConfigLogWarnPlusToDbEnabled">
+            <summary>
+            Enable Logging Server Warn and Errors To Database
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.ConfigCoreServerRegisteredName">
+            <summary>
+            Server Service Name automatic figured in All IS/OS/Engines info
+            Recommended: EASY-IT-CENTER
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.ServiceCoreCheckerEmailSenderActive">
+            <summary>
+            Activation / Deactivation of Email Sender For Server Core Fails Checker All Catch Write
+            to SendEmail, In Debug mode is Written in console in Release mode is Sended email (All
+            incorrect server statuses are monitored) Can be writen to Database - !!! Warning for
+            infinite Cycling (DB shutdown example)
+            Recommended: true
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.ServiceUseDbLocalAutoupdatedDials">
+            <summary>
+            Special Function: Using Selected Tables with AutoRefresh On change as Local DataSets,
+            For Optimize Traffic. For Example LanguageList - Static table with often reading
+            Recommended: true - functionality must be implemented in Server Code
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.ServiceServerLanguage">
+            <summary>
+            Server Language for Translating Server internal statuses
+            Recommended: cz or en - other languages are not implemented
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.ServiceEnableMassEmail">
+            <summary>
+            Server support mass emailing as Service You can enable Mass Email Api
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.ServerProviderModeEnabled">
+            <summary>
+            Enabling Provider APIs More Informations are Published on WepPages Are Published Core
+            Informations With Full Solutions Info/Tools/Codes/Etc Published
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.ModuleAutoSchedulerEnabled">
+            <summary>
+            Server Scheduler Module for Automatization Tasks
+            </summary>
+            <value>The serve scheduler enabled.</value>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.ConfigServerStartupPort">
+            <summary>
+            Set Server Startup Port on Http/HttpS/WebSocket and for All Engines, Modules, API
+            Controler and WebPages
+            Recommended: 5000
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.WebSocketTimeoutMin">
+            <summary>
+            WebSocket Timeout Connection Settings in Minutes. After timeout when not detected any
+            communication socket is closed Set according to your need
+            Recommended: 2
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.WebSocketMaxBufferSizeKb">
+            <summary>
+            Maximum socket message size for control Traffic
+            Recomended: 10
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.ConfigApiTokenTimeoutMin">
+            <summary>
+            Bearer Token Timeout Setting in Minutes. Connection must be Refreshed in Interval After
+            Timeout connection Must Login Again. It is as needed. You Can Change Key for close All
+            connections Immediately. Timeout is good for Webpages
+            Recomended: 15
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.ConfigServerStartupOnHttps">
+            <summary>
+            Setting for Server URL Services. Logically can run only one Http or Https Server has
+            more Security Setting Politics.
+            Recommended: true
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.ConfigServerGetLetsEncrypt">
+            <summary>
+            Setting for Automatic Obtain Lets Encrypt more Security Setting Politics.
+            Recommended: true
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.ConfigCertificatePath">
+            <summary>
+            Certificate file NextFrom'DATA'Path\\Filename.pfx For import External Certificate Its
+            Path from Data Startup Folder,example "groupware.pfx" is in Data Path The Password must
+            be inserted in ConfigCertificatePassword Settings Other for ignore this Setting set
+            empty string "" This settings has Higest Priority before LesEncrypt enabled
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.ConfigCertificateDomain">
+            <summary>
+            Its Domain for include to Automatic Generated Certificate For Server running on HTTPS.
+            Domain is for Your validation Certificate Domain. Can be Changed for commercial. Domain
+            is Used for Lets Encrypt also Write with Comma separator
+            Recommended: 127.0.0.1
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.ConfigCertificatePassword">
+            <summary>
+            Password will be inserted to Server Generated Certificate for HTTPS.
+            Recommended: empty = Maximal Security Randomly generated 20 chars string
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.ConfigJwtLocalKey">
+            <summary>
+            Special Functions:Server AutoGenerated encryption Key For Securing Communication On Each
+            Server Restart All Tokens not will be valid and the Login Reconnect is Requested. Its
+            AntiHacker Security Rule
+            Recommended: empty = Maximal Security Randomly generated 40 chars string
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.ConfigServerStartupHTTPAndHTTPS">
+            <summary>
+            Startup Server On HTTP and HTTPS on Defined Port 
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.ConfigTimeTokenValidationEnabled">
+            <summary>
+            Enable Disable Bearer Token Timeout Validation Token can be valid EveryTime to using:
+            Example for machine connection Or is Control last activity
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.ConfigManagerEmailAddress">
+            <summary>
+            Emailová adresa do obchodních kontaktů
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.ServerFtpEngineEnabled">
+            <summary>
+            Enable FTP File Server oppened for every connection with full rights
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.ServerFtpSecurityEnabled">
+            <summary>
+            Enable FTP Security For access to FTP must be logged
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.ServerFtpStorageRootPath">
+            <summary>
+            FTP Server Storage Path Definition It Will be under wwwroot for Posibility Share Data or
+            For WebAccess/Browser Over WebPortal
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.ServerCorsAllowAnyOrigin">
+            <summary>
+            CORS Hlavčky HTTP Requestů příchozích na server WEB + API, Povolit jakýkoli původ
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.ServerCorsAllowAnyMethod">
+            <summary>
+            CORS Hlavčky HTTP Requestů příchozích na server WEB + API, Povolit jakoukoliv Metodu
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.ServerCorsAllowAnyHeader">
+            <summary>
+            CORS Hlavčky HTTP Requestů příchozích na server WEB + API, Povolit jakýkoliv Header
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.ServerCorsAllowCredentials">
+            <summary>
+            CORS Hlavčky HTTP Requestů příchozích na server WEB + API , Povolit jakékoliv Pověření - Autorizaci
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.ServerPublicUrl">
+            <summary>
+            Veřejná URL adresa serveru použita v modulech
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.ServerCorsEnabled">
+            <summary>
+            Server Filtrování Dle CORS Zapnuto
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.ModuleSwaggerApiDocEnabled">
+            <summary>
+            Special Function: Server Automatically Generate Full Documentation of API structure AND
+            Database Model. Plus Included API Interface for Online Testing All API Methods with
+            Authentication Its Automatic Solution for Third Party cooperation. All changes are
+            Reflected after restart server
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.ModuleHealthServiceEnabled">
+            <summary>
+            Special Function: More than 200 Server Statuses Can be monitored by HeathCheckService,
+            Over Net can Control Other Company Services Also as Central Control Point With Email
+            Service. For Example: Server/Memory/All DB Types/IP/HDD/Port/Api/NET/Cloud/Environment
+            Must be run for Metrics AddOn https://learn.microsoft.com/en-us/dotnet/architecture/microservices/implement-resilient-applications/monitor-app-health
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.ModuleHealthServiceRefreshIntervalSec">
+            <summary>
+            Special Function: More than 200 Server Statuses Can be monitored by HeathCheckService,
+            Over Net can Control Other Company Services Also as Central Control Point With Email
+            Service. For Example: Server/Memory/All DB Types/IP/HDD/Port/Api/NET/Cloud/Environment
+            Must be run for Metrics AddOn !!! run in Release mode for Good Reading of Logs without
+            HeathChecks Cycling info https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks https://testfully.io/blog/api-health-check-monitoring/
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.ModuleMdDocumentationEnabled">
+            <summary>
+            Enable Server Structure Documentation for Developers Using RootPath, - Block File
+            Browsing Is Good for Server with Documentation only Or Use for Show WebPage and Copy
+            "Only HTML"
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.ModuleDbDiagramGeneratorEnabled">
+            <summary>
+            Enable Automatic Database Diagram for Simple show Database structure with All bingings
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.ModuleHealthServicePath">
+            <summary>
+            Api URL cesta Serveru na které bude Dohledové centrum k dispozici
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.ModuleSwaggerApiDocPath">
+            <summary>
+            Api URL cesta Serveru na které bude API Dokumentace a Testovací rozhraní k dispozici
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.ModuleHealthServiceMessageOnChangeOnly">
+            <summary>
+            Zaznamenávat Logování/zaslání zprávy pouze při změně z OK-&gt;FAIL, jinak bude
+            zaznamenáno v každém cyklu
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.ModuleDBEntitySchemaPath">
+            <summary>
+            Cestana které se Schema Zobrazí,
+            default: /DBEntitySchema
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.ModuleDBEntitySchemaEnabled">
+            <summary>
+            Modul Zobrazení DB Entitity Schema
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.ModuleCSharpCodeBuilder">
+            <summary>
+            Online Správa Projektu Serveru a vývoj
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.WebRazorPagesEngineEnabled">
+            <summary>
+            Enable Razor WebPages support engine with Correct Configuration for Automaping from
+            folder 'ServerCorePages'
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.WebMvcPagesEngineEnabled">
+            <summary>
+            Enable Mvc WebPages support engine with Correct Configuration
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.WebSocketEngineEnabled">
+            <summary>
+            Enable WebSocket Engine with Default Example Api Controller
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.WebBrowserContentEnabled">
+            <summary>
+            Enable WebPages File Browsing from server Url on Server
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.WebSocketServerMonitorEnabled">
+            <summary>
+            Server support online multi watch Logging Its Run on Websocket and the Log Messages are
+            sent for All opened connections for wathing on Path: ServerCoreMonitor You can enable
+            Mass Email Api
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.WebRSSFeedsEnabled">
+            <summary>
+            Zapnout Generování RSS fédů z položek, novinek
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.WebRobotTxtFileEnabled">
+            <summary>
+            zapnout zobrazení souboru Robot.txt, obsah se bere z nastavení Portálu
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.WebSitemapFileEnabled">
+            <summary>
+            Generovaný Soubor Sitemap z Menu Portálu
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.ModuleWebDataManagerEnabled">
+            <summary>
+            Module: AutoGenerated Database DataManager for working with Data Running only in Debug
+            mode for simple Develop, can be modified. All changes are Reflected after restart server
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.WebLiveDataMonitorEnabled">
+            <summary>
+            Enable Server Static Folder Monitor for Data Changes And immediatelly update all Api,
+            Endpoints, Client Browser
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.WebSocketGlobalNotifyPath">
+            <summary>
+            WebPortal Global Notify Path on WebSocket for sending messages from scheduler
+            </summary>
+            <value>The web global socket notify path.</value>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerConfigSettings.WebRazorPagesCompileOnRuntime">
+            <summary>
+            Provádí kompilaci Za běhu Serveru. Tzn.. Podporuje Vkládání Stránek Externě
+            </summary>
+        </member>
+        <member name="T:EasyITCenter.ServerCoreStructure.MailRequest">
+            <summary>
+            Class Definition for Server Emailer In List of this claas you can use Mass Emailer
+            </summary>
+        </member>
+        <member name="T:EasyITCenter.ServerCoreStructure.ServerStatuses">
+            <summary>
+            Server and Hosted Services Runtime Statusses
+            </summary>
+        </member>
+        <member name="T:EasyITCenter.ServerCoreStructure.ProcessClass">
+            <summary>
+            Server Process class for running external prrocesses
+            </summary>
+        </member>
+        <member name="T:EasyITCenter.ServerCoreStructure.ServerLocalDbDials">
+            <summary>
+            Special Functions: Definition of Selected tables for Optimal Using to Data nature Its saves
+            traffic, increases availability and for Example implemented Language is in Develop Auto Fill
+            Table when is First Using Its can be used for more Dials
+            </summary>
+        </member>
+        <member name="T:EasyITCenter.ServerCoreStructure.ServerRuntimeData">
+            <summary>
+            The server runtime data.
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerRuntimeData.Startup_path">
+            <summary>
+            Gets or Sets the startup_path.
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerRuntimeData.WebRoot_path">
+            <summary>
+            Gets or Sets the startup_path.
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerRuntimeData.Setting_folder">
+            <summary>
+            Gets or Sets the setting_folder.
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerRuntimeData.UserPath">
+            <summary>
+            Gets or Sets the configure file.
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerRuntimeData.SpecialUserWebRootPath">
+            <summary>
+            User Web Root Path for Startup and Any missing address Automatic Redirection Value must
+            start with / Its Portal Model Central Point
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerRuntimeData.ConfigFile">
+            <summary>
+            Gets or Sets the configure file.
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerRuntimeData.DataPath">
+            <summary>
+            Gets or Sets the data path.
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreStructure.ServerRuntimeData.DebugMode">
+            <summary>
+            Gets or Sets the debug mode.
+            </summary>
+        </member>
+        <member name="F:EasyITCenter.ServerCoreStructure.ServerRuntimeData.LocalDBTableList">
+            <summary>
+            The local db table list.
+            </summary>
+        </member>
+        <member name="F:EasyITCenter.ServerCoreStructure.ServerRuntimeData.ServerCancelToken">
+            <summary>
+            Cancellation Token for Server Remote Control
+            </summary>
+        </member>
+        <member name="F:EasyITCenter.ServerCoreStructure.ServerRuntimeData.ServerArgs">
+            <summary>
+            Server Starup Args
+            </summary>
+        </member>
+        <member name="F:EasyITCenter.ServerCoreStructure.ServerRuntimeData.ServerCoreStatus">
+            <summary>
+            Server Core Status
+            </summary>
+        </member>
+        <member name="F:EasyITCenter.ServerCoreStructure.ServerRuntimeData.ServerRestartRequest">
+            <summary>
+            Server Restart Request Indicator
+            </summary>
+        </member>
+        <member name="F:EasyITCenter.ServerCoreStructure.ServerRuntimeData.ServerFTPProvider">
+            <summary>
+            Server Securited FTP Provider for Remote Control
+            </summary>
+        </member>
+        <member name="F:EasyITCenter.ServerCoreStructure.ServerRuntimeData.ServerAutoSchedulerProvider">
+            <summary>
+            Server Securited FTP Provider for Remote Control
+            </summary>
+        </member>
+        <member name="F:EasyITCenter.ServerCoreStructure.ServerRuntimeData.CentralWebSocketList">
+            <summary>
+            Central WebSocket List for Easy one place Using
+            </summary>
+        </member>
+        <member name="F:EasyITCenter.ServerCoreStructure.ServerRuntimeData.ServerServiceProvider">
+            <summary>
+            Central List With references on Hested Server Sevices For Acess and Using Hosted
+            Functionalities for example: Start/Stop Service And More Other sub services for Optimal Hosting
+            </summary>
+        </member>
+        <member name="F:EasyITCenter.ServerCoreStructure.ServerRuntimeData.FileRotatorRuntineLibrary">
+            <summary>
+            SercerCore FilesLibrary For Rotator
+            TODO Clean
+            </summary>
+        </member>
+        <member name="T:EasyITCenter.ServerCoreStructure.WebSocketExtension">
+            <summary>
+            WebSocket Extension Definition For Simple Central Control All Connection By Connection Path
+            and Timeout
+            </summary>
+        </member>
+        <member name="T:EasyITCenter.ServerCoreStructure.ServerCoreAutoScheduler">
+            <summary>
+            Server AutoSchedule Planner
+            </summary>
+        </member>
+        <member name="T:EasyITCenter.ServerCoreStructure.AutoScheduledJob">
+            <summary>
+            Autoscheduler Process Scheduled Task 
+            definitions 
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:EasyITCenter.ServerCoreStructure.DelegateHealthCheckPublisher">
+            <summary>
+            HeathCheck Handler For Sending Information About Fails
+            </summary>
+        </member>
+        <member name="T:EasyITCenter.ServerCoreStructure.CommunicationController">
+            <summary>
+            Server Communication Extensions for Controlling Data Implmented FullUserTokenData For More
+            Info Modify Auth Claims And Add Get Info Here
+            </summary>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreStructure.CommunicationController.IsAdmin">
+            <summary>
+            Extension for check Admin Role
+            </summary>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreStructure.CommunicationController.IsSystemUser">
+            <summary>
+            Extension for check user Role
+            </summary>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreStructure.CommunicationController.IsWebUser">
+            <summary>
+            Extension for check webuser Role
+            </summary>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreStructure.CommunicationController.IsLogged">
+            <summary>
+            Check HTTP if is the Request Logged
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreStructure.CommunicationController.GetUserRole">
+            <summary>
+            Get UserRole
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreStructure.CommunicationController.GetUserId">
+            <summary>
+            Get UserId
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreStructure.CommunicationController.GetUserName">
+            <summary>
+            Get UserName
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:EasyITCenter.ServerCoreStructure.WebSocketLogProvider">
+            <summary>
+            !!! Implemented Server Core WebSocket System LogProvider Stream This Is Special Serice For
+            Remote Monitoring On More Devices in OneTime
+            </summary>
+            <seealso cref="T:Microsoft.Extensions.Logging.ILoggerProvider"/>
+        </member>
+        <member name="T:EasyITCenter.ServerCoreStructure.WebSocketLogger">
+            <summary>
+            Server Core WebSocket System Logger Interface
+            </summary>
+            <seealso cref="T:Microsoft.Extensions.Logging.ILogger"/>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreStructure.WebSocketLogger.Log``1(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,``0,System.Exception,System.Func{``0,System.Exception,System.String})">
+            <summary>
+            Used to log the entry.
+            </summary>
+            <typeparam name="TState"></typeparam>
+            <param name="logLevel"> An instance of <see cref="T:Microsoft.Extensions.Logging.LogLevel"/>.</param>
+            <param name="eventId">  The event's ID. An instance of <see cref="T:Microsoft.Extensions.Logging.EventId"/>.</param>
+            <param name="state">    The event's state.</param>
+            <param name="exception">The event's exception. An instance of <see cref="T:System.Exception"/></param>
+            <param name="formatter">A delegate that formats</param>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreStructure.CoreOperations.SendMassEmail(System.Collections.Generic.List{EasyITCenter.ServerCoreStructure.MailRequest})">
+            <summary>
+            Sends the mass mail.
+            </summary>
+            <param name="mailRequests">The mail requests.</param>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreStructure.CoreOperations.SendEmail(EasyITCenter.ServerCoreStructure.MailRequest,System.Boolean)">
+            <summary>
+            System Mailer sending Emails To service email with detected fail for analyze and
+            corrections on the Way provide better services every time !!! This You can implement
+            everywhere, !!! In Debug mode is written to Console, in Release will be sent email Empty
+            Sender And Recipients set email for Service Recipient
+            </summary>
+            <param name="mailRequest">    </param>
+            <param name="sendImmediately"></param>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreStructure.CoreOperations.GetSelfSignedCertificate(System.String)">
+            <summary>
+            Gets the self signed certificate For API Security HTTPS.
+            </summary>
+            <param name="password">The password.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreStructure.CoreOperations.GetSelfSignedCertificateFromFile(System.String)">
+            <summary>
+            Set Imported Certificate from file on Server for Https File must has Valid path from
+            Startup Data Path
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreStructure.CoreOperations.CallGetApiUrl(System.String)">
+            <summary>
+            Calls the GET API URL with string Response
+            </summary>
+            <param name="url">The URL.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreStructure.CoreOperations.RunSystemProcess(EasyITCenter.ServerCoreStructure.ProcessClass)">
+            <summary>
+            Server Function For Running External Processes
+            </summary>
+            <param name="processDefinition">The process definition.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreStructure.CoreOperations.ValidAndGetTokenParameters">
+            <summary>
+            Server Token Validation Parameters definition For Api is Used if is ON/Off for Api is On everyTime
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreStructure.CoreOperations.CheckTokenValidityFromString(System.String)">
+            <summary>
+            Token Validator Extension For Server WebPages
+            </summary>
+            <param name="tokenString">The token string.</param>
+            <returns></returns>
+        </member>
+        <member name="T:EasyITCenter.ServerCoreStructure.CoreOperations.GetOperatingSystemInfo">
+            <summary>
+            Extension For Checking Operation System of Server Running
+            </summary>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreStructure.DataOperations.FirstCharToLowerCase(System.String)">
+            <summary>
+            Change First Character of String
+            </summary>
+            <param name="str">The string.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreStructure.DataOperations.UnicodeToUTF8(System.String)">
+            <summary>
+            Unicodes to ut f8.
+            </summary>
+            <param name="strFrom">The string from.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreStructure.DataOperations.GetUserApiErrMessage(System.Exception,System.Int32)">
+            <summary>
+            Mined-ed Error Message For Answer in API Error Response with detailed info about problem
+            </summary>
+            <param name="exception"></param>
+            <param name="msgCount"> </param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreStructure.DataOperations.GetSystemErrMessage(System.Exception,System.Int32)">
+            <summary>
+            Mined-ed Error Message For System Save to Database For Simple Solving Problem
+            </summary>
+            <param name="exception"></param>
+            <param name="msgCount"> </param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreStructure.DataOperations.RandomString(System.Int32)">
+            <summary>
+            Randoms the string.
+            </summary>
+            <param name="length">The length.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreStructure.DataOperations.GetByteArrayFrom64Encode(System.String)">
+            <summary>
+            Separate ByteArray from 64 encode file For inserted file types
+            </summary>
+            <param name="strContent">Content of the string.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreStructure.DataOperations.IsValidEmail(System.String)">
+            <summary>
+            Determines whether [is valid email] [the specified email].
+            </summary>
+            <param name="email">The email.</param>
+            <returns><c>true</c> if [is valid email] [the specified email]; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreStructure.DataOperations.RemoveWhitespace(System.String)">
+            <summary>
+            Removes the whitespace from the String.
+            </summary>
+            <param name="input">The input.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreStructure.DataOperations.MarkDownLineEndSpacesResolve(System.String)">
+            <summary>
+            MarkDown Global Resolve End Spaces Characters On Insert/Update API CALS of Managing
+            </summary>
+            <param name="input">The input.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreStructure.DataOperations.StringToUTF8(System.String)">
+            <summary>
+            Convert String to UTF8
+            </summary>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreStructure.DataOperations.Utf8toUnicode(System.String)">
+            <summary>
+            Convert UTF8 to UNICODE
+            </summary>
+            <param name="utf8String"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreStructure.DataOperations.RemoveDiacritism(System.String)">
+            <summary>
+            Remove Diactritics
+            </summary>
+            <param name="Text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreStructure.DataOperations.ConvertGenericClassToStandard``1(``0)">
+            <summary>
+            Convert Generic Tabla To Standard Table For Use Standard System Fields
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="T:EasyITCenter.ServerCoreStructure.DbOperations">
+            <summary>
+            All Server Definitions of Database Operation method
+            </summary>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreStructure.DbOperations.LoadOrRefreshStaticDbDials(System.Nullable{EasyITCenter.ServerCoreStructure.ServerLocalDbDials})">
+            <summary>
+            Method for All Server Defined Table for Local Using As Off line AutoUpdated Tables
+            </summary>
+            <param name="onlyThis"></param>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreStructure.DbOperations.DBTranslate(System.String,System.String)">
+            <summary>
+            Default Operation for Call Translation
+            </summary>
+            <param name="word">    </param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreStructure.DbOperations.DBTranslateOffline(System.String,System.String)">
+            <summary>
+            Database LanuageList for Off-line Using Definitions
+            </summary>
+            <param name="word">    </param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreStructure.DbOperations.DBTranslateOnline(System.String,System.String)">
+            <summary>
+            Database LanuageList for On-line Using Definitions
+            </summary>
+            <param name="word">    </param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreStructure.DbOperations.BindList``1(System.Data.DataTable)">
+            <summary>
+            Extension For Using Custom Defined Tables from Database Procedures Its used as Database
+            Context Extension as 'CollectionFromSql' Method in Database Context
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="dt">The dt.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreStructure.FileOperations.LoadOrCreateSettings">
+            <summary>
+            Server Local Startup Configuration Its Running as First - Load from Congig.Json After DB
+            connection Before Server Start Is This configuration Replaced By Data from DB And next
+            Server Start. Its for situation - Bad Connection Server Start with Configuration from File
+            </summary>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreStructure.FileOperations.CheckFile(System.String)">
+            <summary>
+            Checks the file.
+            </summary>
+            <param name="file">The file.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreStructure.FileOperations.CopyFiles(System.String,System.String)">
+            <summary>
+            Prepared Method for Files Copy
+            </summary>
+            <param name="sourcePath">     </param>
+            <param name="destinationPath"></param>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreStructure.FileOperations.CreatePath(System.String)">
+            <summary>
+            Creates the path recursively.
+            </summary>
+            <param name="path">The System.IO.Path.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreStructure.FileOperations.ReadFile(System.String)">
+            <summary>
+            Reads the file.
+            </summary>
+            <param name="fileName">Name of the file.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreStructure.FileOperations.ByteArrayToFile(System.String,System.Byte[])">
+            <summary>
+            Write ByteArray to File
+            </summary>
+            <param name="fileName"> Name of the file.</param>
+            <param name="byteArray">The byte array.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreStructure.FileOperations.CreateFile(System.String)">
+            <summary>
+            Prepared Method for Create empty file
+            </summary>
+            <param name="file"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreStructure.FileOperations.WriteToFile(System.String,System.String)">
+            <summary>
+            Write String to File Used for JsonSaving
+            </summary>
+            <param name="file">   The file.</param>
+            <param name="content">The content.</param>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreStructure.FileOperations.FileDetectEncoding(System.String)">
+            <summary>
+            Prepared Method for Get Information of File encoding UTF8,WIN1250,etc
+            </summary>
+            <param name="FileName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreStructure.FileOperations.DeleteDirectory(System.String)">
+            <summary>
+            Deletes the directory.
+            </summary>
+            <param name="directory">The directory.</param>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreStructure.FileOperations.CheckDirectory(System.String)">
+            <summary>
+            Checks the directory.
+            </summary>
+            <param name="directory">The directory.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreStructure.FileOperations.CopyDirectory(System.String,System.String)">
+            <summary>
+            Copy Full directory.
+            </summary>
+            <param name="directory">The directory.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreStructure.FileOperations.CopyFile(System.String,System.String)">
+            <summary>
+            /
+            </summary>
+            <param name="from">From.</param>
+            <param name="to">  To.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreStructure.FileOperations.CreateDirectory(System.String)">
+            <summary>
+            Creates the directory.
+            </summary>
+            <param name="directory">The directory.</param>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreStructure.FileOperations.DeleteFile(System.String)">
+            <summary>
+            Deletes the file.
+            </summary>
+            <param name="file">The file.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreStructure.FileOperations.ClearFolder(System.String)">
+            <summary>
+            Full Clear Folder
+            </summary>
+            <param name="FolderName">Name of the folder.</param>
+        </member>
+        <member name="T:EasyITCenter.ServerCoreStructure.WebToolsOperations">
+            <summary>
+            Server Web Helpers for EASY working Here are extension for Database Model, WebSocket
+            </summary>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreStructure.WebToolsOperations.SaveWebSourceFile(Microsoft.AspNetCore.Hosting.IWebHostEnvironment@,EasyITCenter.DBModel.WebCoreFileList@)">
+            <summary>
+            Saving Modified Managed Web Source Files to Dev and Startup Folders Used For JS,CSS Files
+            </summary>
+            <param name="hostingEnvironment">The hosting environment.</param>
+            <param name="record">            The record.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreStructure.WebToolsOperations.DeleteWebSourceFile(Microsoft.AspNetCore.Hosting.IWebHostEnvironment@,EasyITCenter.DBModel.WebCoreFileList@)">
+            <summary>
+            Delete Managed Web Source Files from Dev and Startup Folders Delete Minified and Full Script
+            </summary>
+            <param name="hostingEnvironment">The hosting environment.</param>
+            <param name="record">            The record.</param>
+            <returns></returns>
+        </member>
+        <member name="T:EasyITCenter.ServerCoreStructure.ServerCoreWebHelpers">
+            <summary>
+            Server Web Helpers for EASY working Here are extension for Database Model, WebSocket
+            </summary>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreStructure.ServerCoreWebHelpers.SendMessageToClientSocket(System.Net.WebSockets.WebSocket,System.String)">
+            <summary>
+            Sends the message to client WebSocket. This Is Used by
+            "SendMessageAndUpdateWebSocketsInSpecificPath" For Update Informaions on All Connections
+            in Same WebSocket Path Its Solution FOR Teminals, Group Communications, etc.
+            </summary>
+            <param name="webSocket">The web socket.</param>
+            <param name="message">  The message.</param>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreStructure.ServerCoreWebHelpers.ListenClientWebSocketMessages(System.Net.WebSockets.WebSocket,System.String)">
+            <summary>
+            Register Listening Client WebSocket Communication Ist for Receive messages from Client
+            </summary>
+            <param name="webSocket">    </param>
+            <param name="socketAPIPath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreStructure.ServerCoreWebHelpers.AddSocketConnectionToCentralList(System.Net.WebSockets.WebSocket,System.String)">
+            <summary>
+            Add WeSocket Connection To Central List
+            </summary>
+            <param name="newWebSocket"> The new web socket.</param>
+            <param name="socketAPIPath">The socket path.</param>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreStructure.ServerCoreWebHelpers.SendMessageAndUpdateWebSocketsInSpecificPath(System.String,System.String)">
+            <summary>
+            Sends the message and update web sockets in specific path.
+            </summary>
+            <param name="socketAPIPath">The socket API path.</param>
+            <param name="message">      The message.</param>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreStructure.ServerCoreWebHelpers.DisposeSocketConnectionsWithTimeOut">
+            <summary>
+            !! Global Method for Simple Using WebSockets WebSocket Disposed - Cleaning monitored
+            Sockets from Central List. Are Closed and Disposed Only with Timeout or with closed Connection
+            </summary>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreServers.HostedFtpServer.#ctor(FubarDev.FtpServer.IFtpServerHost)">
+            <summary>
+            Initializes a new instance of the <see cref="T:EasyITCenter.ServerCoreServers.HostedFtpServer"/> class.
+            </summary>
+            <param name="ftpServerHost">The FTP server host that gets wrapped as a hosted service.</param>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreServers.HostedFtpServer.StartAsync(System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreServers.HostedFtpServer.StopAsync(System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="T:EasyITCenter.ServerCoreServers.HostedFtpServerMembershipProvider">
+            <summary>
+            Custom membership provider for Authentication Validation Actual is Set by UserName and
+            Password in Database
+            </summary>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreServers.HostedFtpServerMembershipProvider.ValidateUser(System.String,System.String)">
+            <summary>
+            FTP User Validation Its for Open FTP and User Validation
+            </summary>
+            <param name="username">The username.</param>
+            <param name="password">The password.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreServers.HostedFtpServerMembershipProvider.ValidateUserAsync(System.String,System.String)">
+            <summary>
+            FTP User Validation Async Its for Open FTP and User Validation
+            </summary>
+            <param name="username">The user name.</param>
+            <param name="password">The password.</param>
+            <returns>The result of the validation.</returns>
+        </member>
+        <member name="T:EasyITCenter.ServerCoreServers.HostedFtpServerMembershipProvider.CustomFtpUser">
+            <summary>
+            Custom FTP user implementation
+            </summary>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreServers.HostedFtpServerMembershipProvider.CustomFtpUser.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:EasyITCenter.ServerCoreServers.HostedFtpServerMembershipProvider.CustomFtpUser"/> instance.
+            </summary>
+            <param name="name">The user name</param>
+        </member>
+        <member name="P:EasyITCenter.ServerCoreServers.HostedFtpServerMembershipProvider.CustomFtpUser.Name">
+            <inheritdoc/>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreServers.HostedFtpServerMembershipProvider.CustomFtpUser.IsInGroup(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="T:EasyITCenter.ServerCoreConfiguration.ServerConfigurationServices">
+            <summary>
+            Server Core Configuration Settings of Security, Communications, Technologies, Modules Rules,
+            Rights, Conditions, Formats, Services, Logging, etc..
+            </summary>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreConfiguration.ServerConfigurationServices.ConfigureFTPServer(Microsoft.Extensions.DependencyInjection.IServiceCollection@)">
+            <summary>
+            Custom Secure FTP Server
+            </summary>
+            <param name="services">The services.</param>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreConfiguration.ServerConfigurationServices.ConfigureCookie(Microsoft.Extensions.DependencyInjection.IServiceCollection@)">
+            <summary>
+            Server Core: Configure Cookie Politics
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreConfiguration.ServerConfigurationServices.ConfigureControllers(Microsoft.Extensions.DependencyInjection.IServiceCollection@)">
+            <summary>
+            Server Core: Configure Server Controllers
+            options.SuppressImplicitRequiredAttributeForNonNullableReferenceTypes = [ValidateNever]
+            in Class options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore
+            = [JsonIgnore] in Class
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreConfiguration.ServerConfigurationServices.ConfigureLogging(Microsoft.Extensions.DependencyInjection.IServiceCollection@)">
+            <summary>
+            Server Core: Configure Server Logging
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreConfiguration.ServerConfigurationServices.ConfigureAuthentication(Microsoft.Extensions.DependencyInjection.IServiceCollection@)">
+            <summary>
+            Server Core: Configure Server Authentication Support
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreConfiguration.ServerConfigurationServices.ConfigureServerWebPages(Microsoft.Extensions.DependencyInjection.IServiceCollection@)">
+            <summary>
+            Configures the MVC server pages on Server format "cshtml"
+            </summary>
+            <param name="services">The services.</param>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreConfiguration.ServerConfigurationServices.ConfigureLetsEncrypt(Microsoft.Extensions.DependencyInjection.IServiceCollection@)">
+            <summary>
+            Server core: Configures LetsEncrypt using. Certificate will be saved in DataPath
+            </summary>
+            <param name="services">The services.</param>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreConfiguration.ServerConfigurationServices.ConfigureWebSocketLoggerMonitor(Microsoft.Extensions.DependencyInjection.IServiceCollection@)">
+            <summary>
+            Server core: Configures the WebSocket logger monitor. For multi monitoring and for
+            Example Posibilities
+            </summary>
+            <param name="services">The services.</param>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreConfiguration.ServerConfigurationServices.ConfigureThirdPartyApi(Microsoft.Extensions.DependencyInjection.IServiceCollection@)">
+            <summary>
+            Server Core: Configure HTTP Client for work with third party API
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreConfiguration.ServerConfigurationServices.ConfigureSingletons(Microsoft.Extensions.DependencyInjection.IServiceCollection@)">
+            <summary>
+            Server Core: Configures the singletons. Its Register Custom Listeners For Actions
+            </summary>
+            <param name="services">The services.</param>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreConfiguration.ServerConfigurationServices.ConfigureScoped(Microsoft.Extensions.DependencyInjection.IServiceCollection@)">
+            <summary>
+            Server Core: Configure Custom Core Services
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreConfiguration.ServerConfigurationServices.ConfigureCentralServicesProviders(Microsoft.Extensions.DependencyInjection.IServiceCollection@)">
+            <summary>
+            Server Core: Configure Hosted Service to Runtime Core For Access to Root Functionalities
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreConfiguration.ServerConfigurationServices.ConfigureDatabaseContext(Microsoft.Extensions.DependencyInjection.IServiceCollection@)">
+            <summary>
+            Server Core: Configure Custom Services
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="T:EasyITCenter.ServerCoreConfiguration.ServerEnablingServices">
+            <summary>
+            Server Core Enabling Settings of Security, API Communications, Technologies, Modules,Rules,
+            Rights, Rules, Rights, Conditions, Cors, Cookies, Formats, Services, Logging, etc..
+            </summary>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreConfiguration.ServerEnablingServices.EnableLogging(Microsoft.AspNetCore.Builder.IApplicationBuilder@)">
+            <summary>
+            Enable Server Logging in Debug Mode
+            </summary>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreConfiguration.ServerEnablingServices.EnableCors(Microsoft.AspNetCore.Builder.IApplicationBuilder@)">
+            <summary>
+            Server Cors Configuration
+            </summary>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreConfiguration.ServerEnablingServices.EnableWebSocket(Microsoft.AspNetCore.Builder.IApplicationBuilder@)">
+            <summary>
+            Server WebSocket Configuration
+            </summary>
+            <param name="app"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreConfiguration.ServerEnablingServices.EnableEndpoints(Microsoft.AspNetCore.Builder.IApplicationBuilder@)">
+            <summary>
+            Server Endpoints Configuration
+            </summary>
+        </member>
+        <member name="T:EasyITCenter.ServerCoreConfiguration.ServerModules">
+            <summary>
+            Configure Server Ad-dons and Modules
+            </summary>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreConfiguration.ServerModules.ConfigureScheduler(Microsoft.Extensions.DependencyInjection.IServiceCollection@)">
+            <summary>
+            Server Module: Configures the Scheduler Module.
+            </summary>
+            <param name="services">The services.</param>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreConfiguration.ServerModules.ConfigureDocumentation(Microsoft.Extensions.DependencyInjection.IServiceCollection@)">
+            <summary>
+            Server Module: Generted Developer Documentation for Defvelopers Documentation contain
+            full Server Structure for extremelly simple developing
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreConfiguration.ServerModules.ConfigureDBEntitySchema(Microsoft.Extensions.DependencyInjection.IServiceCollection@)">
+            <summary>
+            Module Entity Schema Design Generator
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreConfiguration.ServerModules.ConfigureLiveDataMonitor(Microsoft.Extensions.DependencyInjection.IServiceCollection@)">
+            <summary>
+            Server Module: Generted Developer Documentation for Defvelopers Documentation contain
+            full Server Structure for extremelly simple developing
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreConfiguration.ServerModules.ConfigureHealthCheck(Microsoft.Extensions.DependencyInjection.IServiceCollection@)">
+            <summary>
+            Server Module: Automatic DB Data Manager for work with data directly Extreme
+            Posibilities https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreConfiguration.ServerModules.ConfigureSwagger(Microsoft.Extensions.DependencyInjection.IServiceCollection@)">
+            <summary>
+            Server Module: Swagger Api Doc Generator And Online Tester Configuration
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="T:EasyITCenter.ServerCoreConfiguration.ServerModulesEnabling">
+            <summary>
+            Enable Configured Server Ad-dons and Modules
+            </summary>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreConfiguration.ServerModulesEnabling.EnableDocumentation(Microsoft.AspNetCore.Builder.IApplicationBuilder@)">
+            <summary>
+            Server Module: Enable Generated Developer Documentation
+            </summary>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreConfiguration.ServerModulesEnabling.EnableSwagger(Microsoft.AspNetCore.Builder.IApplicationBuilder@)">
+            <summary>
+            Server Module: Enable Swagger Api Doc Generator And Online Tester
+            </summary>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreConfiguration.ServerModulesEnabling.EnableLiveDataMonitor(Microsoft.AspNetCore.Builder.IApplicationBuilder@)">
+            <summary>
+            Server Module: Enable Live Data Monitor
+            </summary>
+        </member>
+        <member name="M:EasyITCenter.ServerCoreConfiguration.ServerModulesEnabling.EnableDBEntitySchema(Microsoft.AspNetCore.Builder.IApplicationBuilder@)">
+            <summary>
+            Server Module: Enable DBEntitySchema Web Page
+            </summary>
+        </member>
+        <member name="T:EasyITCenter.Startup">
+            <summary>
+            Server Startup Definitions
+            </summary>
+        </member>
+        <member name="M:EasyITCenter.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Server Core: Main Configure of Server Services, Technologies, Modules, etc..
+            </summary>
+            <param name="services"></param>
+            <returns>void.</returns>
+        </member>
+        <member name="M:EasyITCenter.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.Extensions.Hosting.IHostApplicationLifetime)">
+            <summary>
+            Server Core: Main Enabling of Server Services, Technologies, Modules, etc..
+            </summary>
+            <param name="app">           </param>
+            <param name="serverLifetime"></param>
+        </member>
+        <member name="M:EasyITCenter.Startup.ServerOnStarted">
+            <summary>
+            Server Core Enabling Disabling Hosted Services
+            </summary>
+        </member>
+        <member name="T:EasyITCenter.MimeTypes">
+            <summary>
+            Provides utilities for mapping file names and extensions to MIME-types.
+            </summary>
+        </member>
+        <member name="P:EasyITCenter.MimeTypes.FallbackMimeType">
+            <summary>
+            The fallback MIME-type. Defaults to <c>application/octet-stream</c>.
+            </summary>
+        </member>
+        <member name="M:EasyITCenter.MimeTypes.GetMimeTypeExtensions(System.String)">
+            <summary>
+            Attempts to fetch all available file extensions for a MIME-type.
+            </summary>
+            <param name="mimeType">The name of the MIME-type</param>
+            <returns>All available extensions for the given MIME-type</returns>
+        </member>
+        <member name="M:EasyITCenter.MimeTypes.TryGetMimeType(System.String,System.String@)">
+            <summary>
+            Tries to get the MIME-type for the given file name.
+            </summary>
+            <param name="fileName">The name of the file.</param>
+            <param name="mimeType">The MIME-type for the given file name.</param>
+            <returns><c>true</c> if a MIME-type was found, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:EasyITCenter.MimeTypes.GetMimeType(System.String)">
+            <summary>
+            Gets the MIME-type for the given file name,
+            or <see cref="P:EasyITCenter.MimeTypes.FallbackMimeType"/> if a mapping doesn't exist.
+            </summary>
+            <param name="fileName">The name of the file.</param>
+            <returns>The MIME-type for the given file name.</returns>
+        </member>
+        <member name="M:UploadFilesServer.Controllers.ServerWebsiteStaticFilesApi.GetFiles(EasyITCenter.DBModel.StaticFilesRequest)">
+            <summary>
+            WebStatic Files for Website and Path
+            Get Full Folder Info 
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ServerCorePages.ErrorModel.GetManagedCssFilesForLayout">
+            <summary>
+            Generation Css Script Section In Server Pages
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ServerCorePages.ErrorModel.GetManagedJsFilesForLayout">
+            <summary>
+            Generation JS Script Section In Server Pages
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ServerCorePages.ErrorModel.GetManagedHeaderPreCssForLayout">
+            <summary>
+            Gets HeaderPreCss the managed header pre CSS for layout.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ServerCorePages.ErrorModel.GetManagedHeaderPreScriptsForLayout">
+            <summary>
+            Gets HeaderPreCss the managed header pre CSS for layout.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ServerCorePages.ErrorModel.GetManagedHeaderPostScriptsForLayout">
+            <summary>
+            Gets HeaderPostScripts the managed header pre CSS for layout.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ServerCorePages.ErrorModel.GetManagedBodyPartForLayout">
+            <summary>
+            Get Allowed Global Body HTML Code Its HTML Content Computed by Guest/webuser/admin
+            Rights From DB Table WebGlobalBodyBlockList
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ServerCorePages.ErrorModel.GetManagedFooterPartForLayout">
+            <summary>
+            Get Allowed Global Footer HTML Code Its HTML Content Computed by Guest/webuser/admin
+            Rights From DB Table WebGlobalBodyBlockList
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:ServerCorePages.IndexModel">
+            <summary>
+            Default Page for Every Web Request Here are defined Main Pages Sections THIs Page Is Alone For
+            </summary>
+            <seealso cref="T:Microsoft.AspNetCore.Mvc.RazorPages.PageModel"/>
+        </member>
+        <member name="M:ServerCorePages.IndexModel.OnGet">
+            <summary>
+            Checking Cookie TOKEN FROM Metro for User/UserRole checking on Server Side This Is Use
+            For User Checking In Razor/MVC Server Web Pages This is Use For User Role and his Rights
+            If is Logged Checking Has Loaded User Claims with Full Token Info
+            </summary>
+        </member>
+        <member name="M:ServerCorePages.IndexModel.GetManagedCssFilesForLayout">
+            <summary>
+            Generation Css Script Section In Server Pages
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ServerCorePages.IndexModel.GetManagedJsFilesForLayout">
+            <summary>
+            Generation JS Script Section In Server Pages
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ServerCorePages.IndexModel.GetManagedHeaderPreCssForLayout">
+            <summary>
+            Gets HeaderPreCss the managed header pre CSS for layout.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ServerCorePages.IndexModel.GetManagedHeaderPreScriptsForLayout">
+            <summary>
+            Gets HeaderPreCss the managed header pre CSS for layout.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ServerCorePages.IndexModel.GetManagedHeaderPostScriptsForLayout">
+            <summary>
+            Gets HeaderPostScripts the managed header pre CSS for layout.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ServerCorePages.IndexModel.GetManagedBodyPartForLayout">
+            <summary>
+            Get Allowed Global Body HTML Code Its HTML Content Computed by Guest/webuser/admin
+            Rights From DB Table WebGlobalBodyBlockList
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ServerCorePages.IndexModel.GetManagedFooterPartForLayout">
+            <summary>
+            Get Allowed Global Footer HTML Code Its HTML Content Computed by Guest/webuser/admin
+            Rights From DB Table WebGlobalBodyBlockList
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

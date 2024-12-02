@@ -1,0 +1,34 @@
+apiRules:
+    - exclude:
+          uidRegex: ^Amib\.Threading
+          type: Type
+    - exclude:
+          uidRegex: ^System\.Threading
+          type: Type
+    - exclude:
+        hasAttribute:
+          uid: System.Runtime.InteropServices.DllImportAttribute
+    - exclude:
+          uidRegex: ^ServiceStack\.OrmLite\.Firebird
+          type: Type
+    - exclude:
+          uidRegex: ^ServiceStack\.OrmLite\.Oracle
+          type: Type
+    - exclude:
+        uidRegex: ^Funq
+        type: Type
+    - exclude:
+        uidRegex: ^MarkdownDeep
+        type: Type
+    - exclude:
+        uidRegex: ^MarkdownSharp
+        type: Type
+    - exclude:
+        uidRegex: ^TestMqHost
+        type: Type
+    - exclude:
+        uidRegex: ^ServiceStack\.Razor\.Compilation\.CodeTransformers
+        type: Type
+    - exclude:
+        uidRegex: ^ServiceStack\.Redis\.Support\.Queue\.Implementation
+        type: Type

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Image Carousel Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/blueimp-gallery.min.css" />
+    <link rel="stylesheet" href="./css/blueimp-gallery-indicator.css" />
+    <link rel="stylesheet" href="./css/blueimp-gallery-video.css" />
+</head>
+<body>
+
+    <div id="blueimp-image-carousel" style="padding-top:30px; position: static;" class="blueimp-gallery blueimp-gallery-carousel" aria-label="image carousel">
+        <div class="slides" aria-live="off"></div>
+        <h3 class="title"></h3>
+        <a class="prev"
+           aria-controls="blueimp-image-carousel"
+           aria-label="previous slide"></a>
+        <a class="next"
+           aria-controls="blueimp-image-carousel"
+           aria-label="next slide"></a>
+        <a class="play-pause"
+           aria-controls="blueimp-image-carousel"
+           aria-label="play slideshow"
+           aria-pressed="true"
+           role="button"></a>
+        <ol class="indicator"></ol>
+    </div>
+
+    <script src="./js/blueimp-helper.min.js"></script>
+    <script src="./js/blueimp-gallery.min.js"></script>
+    <script src="./js/blueimp-gallery-fullscreen.min.js"></script>
+    <script src="./js/blueimp-gallery-indicator.min.js"></script>
+    <script src="./js/blueimp-gallery-video.min.js"></script>
+    <script src="./js/blueimp-gallery-vimeo.min.js"></script>
+    <script src="./js/blueimp-gallery-youtube.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery.blueimp-gallery.min.js"></script>
+    <script>
+
+        let sources = [];
+		for (var i = 104; i >= 1; i--) {sources.push({title: i, href: './images/'+i+'.png', thumbnail: './images/'+i+'.png'});};
+		/*
+            { title: 'LicenseShoper', href: 'images/1.png', thumbnail: 'images/1.png' },
+            { title: 'ProductionGuides', href: 'images/2.png', thumbnail: 'images/2.png' },
+            { title: 'ShoPingER', href: 'images/3.png', thumbnail: 'images/3.png' },
+            { title: 'SystemBuilder', href: 'images/4.png', thumbnail: 'images/4.png' }
+		*/
+        
+
+        blueimp.Gallery(sources, {
+            container: '#blueimp-image-carousel',
+            carousel: true,
+            enableKeyboardNavigation: true,
+            startSlideshow: true,
+            fullscreen: true
+        });
+    </script>
+</body>
+</html>

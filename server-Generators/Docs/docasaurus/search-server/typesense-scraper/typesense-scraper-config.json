@@ -1,0 +1,318 @@
+{
+  "index_name": "typesense_docs",
+  "allowed_domains": ["172.17.0.2","reference.servicestack.net"],
+  "start_urls": [
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.Admin/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.OpenApi/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.AspNet/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.Auth/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.Authentication.MongoDb/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.Authentication.RavenDb/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.Caching/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.Caching.Memcached/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.Commands/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.Configuration/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.Data/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.DataAnnotations/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.Desktop/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.FluentValidation/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.FluentValidation.Attributes/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.FluentValidation.Mvc/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.FluentValidation.Validators/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.Formats/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.Host/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.Host.AspNet/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.Host.Handlers/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.Host.HttpListeners/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.Host.NetCore/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.HtmlModules/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.IO/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.Logging/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.Markdown/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.Messaging/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.Metadata/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.Model/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.MsgPack/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.Mvc/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.NativeTypes/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.NativeTypes.CSharp/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.NativeTypes.Dart/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.NativeTypes.FSharp/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.NativeTypes.Java/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.NativeTypes.Kotlin/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.NativeTypes.Python/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.NativeTypes.Swift/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.NativeTypes.TypeScript/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.NativeTypes.VbNet/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.NetCore/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.OrmLite/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.OrmLite.Converters/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.OrmLite.Dapper/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.OrmLite.Legacy/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.OrmLite.MySql/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.OrmLite.MySql.Converters/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.OrmLite.MySql.DataAnnotations/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.OrmLite.PostgresSQL/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.OrmLite.PostgresSQL.Converters/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.OrmLite.SqlServer/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.OrmLite.SqlServer.Converters/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.OrmLite.Sqlite/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.OrmLite.Sqlite.Converters/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.Platforms/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.ProtoBuf/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.RabbitMq/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.Razor/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.Razor.Compilation/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.Razor.Managers/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.Redis/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.Redis.Generic/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.Redis.Pipeline/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.Redis.Support/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.Redis.Support.Diagnostic/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.Redis.Support.Locking/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.Redis.Support.Queue/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.Reflection/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.Script/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.Serialization/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.SmartThreadPool/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.Support/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.Support.Markdown/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.Support.WebHost/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.Templates/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.Testing/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.Text/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.Text.Common/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.Text.Controller/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.Text.FastMember/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.Text.Json/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.Text.Jsv/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.Text.Pools/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.Text.Support/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.Validation/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.VirtualPath/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.Web/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.Blazor/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.Blazor.Components/"
+    },
+    {
+      "url": "https://reference.servicestack.net/api/ServiceStack.Blazor.Components.Tailwind/"
+    }
+  ],
+  "selectors": {
+    "default": {
+      "lvl0": {
+        "selector": "(//ul[contains(@class,'menu__list')]//a[contains(@class, 'menu__link menu__link--sublist menu__link--active')]/text() | //nav[contains(@class, 'navbar')]//a[contains(@class, 'navbar__link--active')]/text())[last()]",
+        "type": "xpath",
+        "global": true,
+        "default_value": "Documentation"
+      },
+      "lvl1": "article h1",
+      "lvl2": "article h3",
+      "lvl3": "article h5, article td:first-child",
+      "text": "article p, article li, article td:last-child"
+    }
+  },
+  "scrape_start_urls": false,
+  "strip_chars": " .,;:#",
+  "custom_settings": {
+    "separatorsToIndex": "_",
+    "attributesForFaceting": [
+      "language",
+      "version",
+      "type",
+      "docusaurus_tag"
+    ],
+    "attributesToRetrieve": [
+      "hierarchy",
+      "content",
+      "anchor",
+      "url",
+      "url_without_anchor",
+      "type"
+    ]
+  }
+}

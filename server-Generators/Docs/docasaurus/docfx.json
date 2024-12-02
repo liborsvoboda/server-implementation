@@ -1,0 +1,63 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": ["*/*.csproj"],
+          "src": "../ServiceStack/ServiceStack/src/",
+          "exclude": [
+            "**/bin/**",
+            "**/obj/**"
+          ]
+        },
+        {
+          "files": ["*/*.csproj"],
+          "src": "../ServiceStack/ServiceStack.Blazor/src/",
+          "exclude": [
+            "**/bin/**",
+            "**/obj/**"
+          ]
+        },
+        {
+          "files": ["*/*.csproj"],
+          "src": "../ServiceStack/ServiceStack.OrmLite/src/",
+          "exclude": [
+            "**/bin/**",
+            "**/obj/**"
+          ]
+        },
+        {
+          "files": ["*/*.csproj"],
+          "src": "../ServiceStack/ServiceStack.Redis/src/",
+          "exclude": [
+            "**/bin/**",
+            "**/obj/**"
+          ]
+        },
+        {
+          "files": ["*/*.csproj"],
+          "src": "../ServiceStack/ServiceStack.Text/src/",
+          "exclude": [
+            "**/bin/**",
+            "**/obj/**"
+          ]
+        }
+      ],
+      "dest": "api",
+      "filter": "filterConfig.yml",
+      "disableGitFeatures": false,
+      "disableDefaultFilter": false
+    }
+  ],
+  "build": {
+    "resource": [
+      {
+        "files" : [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.gif"
+        ]
+      }
+    ]
+  }
+}
